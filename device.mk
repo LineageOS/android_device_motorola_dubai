@@ -40,7 +40,8 @@ PRODUCT_PACKAGES += \
     LineageSystemUIDubai \
     SettingsResDubai \
     SettingsProviderResDubai \
-    SystemUIResDubai
+    SystemUIResDubai \
+    WifiResDubai
 
 # Audio
 PRODUCT_COPY_FILES += \
