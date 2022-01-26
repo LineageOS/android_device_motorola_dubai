@@ -5,6 +5,7 @@ import /vendor/etc/init/hw/init.vendor.st21nfc.rc
 on early-init
    setprop ro.vendor.device_edition ${ro.boot.edition}
    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules qpnp-smbcharger-mmi qpnp_adaptive_charge
+   exec u:r:vendor_modprove:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules touchscreen_mmi.ko stmicro_mmi.ko
 
 on mmi-priority
    # Only high priority MMI DLKMs loaded here
@@ -30,8 +31,6 @@ on fs
    insmod /vendor/lib/modules/tzlog_dump.ko
    insmod /vendor/lib/modules/watchdog_cpu_ctx.ko
    insmod /vendor/lib/modules/mmi_relay.ko
-   insmod /vendor/lib/modules/touchscreen_mmi.ko
-   insmod /vendor/lib/modules/stmicro_mmi.ko
    insmod /vendor/lib/modules/sx937x_sar.ko
    insmod /vendor/lib/modules/st21nfc.ko
    insmod /vendor/lib/modules/stmvl53l1.ko

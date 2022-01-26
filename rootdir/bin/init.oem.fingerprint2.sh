@@ -10,8 +10,8 @@
 
 script_name=${0##*/}
 script_name=${script_name%.*}
-function log {
-    echo "$script_name: $*" > /dev/kmsg
+function notice {
+    log -t "$scriptname" -i "$*"
 }
 
 persist_fps_id=/mnt/vendor/persist/fps/vendor_id
@@ -19,7 +19,7 @@ persist_fps_id2=/mnt/vendor/persist/fps/last_vendor_id
 MAX_TIMES=100
 
 if [ ! -f $persist_fps_id ]; then
-    log "warn: no associated persist file found"
+    notice "warn: no associated persist file found"
     return -1
 fi
 FPS_VENDOR_NONE=none
@@ -36,15 +36,15 @@ fps_vendor2=$(cat $persist_fps_id2)
 if [ -z $fps_vendor2 ]; then
     fps_vendor2=$FPS_VENDOR_NONE
 fi
-log "FPS vendor (last): $fps_vendor2"
+notice "FPS vendor (last): $fps_vendor2"
 fps_vendor=$(cat $persist_fps_id)
 if [ -z $fps_vendor ]; then
     fps_vendor=$FPS_VENDOR_NONE
 fi
-log "FPS vendor: $fps_vendor"
+notice "FPS vendor: $fps_vendor"
 
 if [ $fps_vendor == $FPS_STATUS_NONE ]; then
-    log "warn: boot as the last FPS"
+    notice "warn: boot as the last FPS"
     fps=$fps_vendor2
 else
     fps=$fps_vendor
@@ -55,35 +55,35 @@ do
 
 setprop $prop_fps_status $FPS_STATUS_NONE
 if [ $fps == $FPS_VENDOR_FPC ]; then
-    log "start fps_hal"
+    notice "start fps_hal"
     start fps_hal
 else
-    log "start goodix_hal"
+    notice "start goodix_hal"
     start goodix_hal
 fi
 
-log "wait for HAL finish ..."
+notice "wait for HAL finish ..."
 fps_status=$(getprop $prop_fps_status)
 for ii in $(seq 1 $MAX_TIMES)
 do
-#    log "check fps vendor status: $fps_status"
+#    notice "check fps vendor status: $fps_status"
     if [ $fps_status != $FPS_STATUS_NONE ]; then
         break
     fi
     sleep 0.2
     fps_status=$(getprop $prop_fps_status)
 done
-log "fingerprint HAL status: $fps_status"
+notice "fingerprint HAL status: $fps_status"
 
 if [ $fps_status == $FPS_STATUS_OK ]; then
-    log "HAL success"
+    notice "HAL success"
     setprop $prop_persist_fps $fps
     if [ $fps_vendor2 == $fps ]; then
         return 0
     fi
-    log "- update FPS vendor (last)"
+    notice "- update FPS vendor (last)"
     echo $fps > $persist_fps_id2
-    log "- done"
+    notice "- done"
     return 0
 fi
 
@@ -103,11 +103,11 @@ if [ $fps == $fps_vendor2 ]; then
         insmod /vendor/lib/modules/fpc1020_mmi.ko
         fps=$FPS_VENDOR_FPC
     fi
-    log "- update FPS vendor"
+    notice "- update FPS vendor"
     echo $fps > $persist_fps_id
     sleep 1
 else
-    log "error: HAL fail unload ko"
+    notice "error: HAL fail unload ko"
     if [ $fps == $FPS_VENDOR_FPC ]; then
         rmmod fpc1020_mmi
     else
@@ -116,7 +116,7 @@ else
     setprop $prop_persist_fps $FPS_VENDOR_NONE
     echo $FPS_VENDOR_NONE > $persist_fps_id
 
-    log "- done"
+    notice "- done"
     return 1
 fi
 

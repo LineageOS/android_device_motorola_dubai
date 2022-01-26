@@ -14,8 +14,8 @@
 
 script_name=${0##*/}
 script_name=${script_name%.*}
-function log {
-    echo "$script_name: $*" > /dev/kmsg
+function notice {
+    log -t "$scriptname" -i "$*"
 }
 
 persist_fps_id=/mnt/vendor/persist/fps/vendor_id
@@ -31,27 +31,27 @@ function ident_fps {
     log "- install FPC driver"
     insmod /vendor/lib/modules/fpc1020_mmi.ko
     sleep 1
-    log "- identify FPC sensor"
+    notice "- identify FPC sensor"
     setprop $PROP_FPS_IDENT ""
     start fpc_ident
     for i in $(seq 1 $MAX_TIMES)
     do
         sleep 0.1
         ident_status=$(getprop $PROP_FPS_IDENT)
-        log "-result : $ident_status"
+        notice "-result : $ident_status"
         if [ $ident_status == $FPS_VENDOR_FPC ]; then
             log "ok"
             echo $FPS_VENDOR_FPC > $persist_fps_id
             return 0
         elif [ $ident_status == $FPS_VENDOR_NONE ]; then
-            log "fail"
-            log "- unload FPC driver"
+            notice "fail"
+            notice "- unload FPC driver"
             rmmod fpc1020_mmi
             break
         fi
     done
 
-    log "- install Goodix driver"
+    notice "- install Goodix driver"
     insmod /vendor/lib/modules/goodix_fod_mmi.ko
     echo $FPS_VENDOR_GOODIX > $persist_fps_id
     return 0
@@ -66,16 +66,16 @@ fps_vendor=$(cat $persist_fps_id)
 if [ -z $fps_vendor ]; then
     fps_vendor=$FPS_VENDOR_NONE
 fi
-log "FPS vendor: $fps_vendor"
+notice "FPS vendor: $fps_vendor"
 
 if [ $fps_vendor == $FPS_VENDOR_GOODIX ]; then
-    log "- install Goodix driver"
+    notice "- install Goodix driver"
     insmod /vendor/lib/modules/goodix_fod_mmi.ko
     return $?
 fi
 
 if [ $fps_vendor == $FPS_VENDOR_FPC ]; then
-    log "- install FPC driver"
+    notice "- install FPC driver"
     insmod /vendor/lib/modules/fpc1020_mmi.ko
     return $?
 fi
