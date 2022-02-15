@@ -13,3 +13,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+PRODUCT_SHIPPING_API_LEVEL := 30
