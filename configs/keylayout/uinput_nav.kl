@@ -1,0 +1,9 @@
+#
+# GF3626_Z9 gesture sensor driver
+#
+
+key 618   SYSTEM_NAVIGATION_UP
+key 619   SYSTEM_NAVIGATION_DOWN
+# double tap
+key 622   SYSTEM_NAVIGATION_LEFT
+
