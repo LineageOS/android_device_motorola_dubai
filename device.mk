@@ -19,3 +19,11 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_SHIPPING_API_LEVEL := 30
+
+# Inherit from motorola sm8250-common
+$(call inherit-product, device/motorola/sm8250-common/common.mk)
+
+
+
+# Inherit from vendor blobs
+$(call inherit-product, vendor/motorola/pstar/pstar-vendor.mk)

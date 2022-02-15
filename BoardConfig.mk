@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+# Inherit from motorola sm8250-common
+$(call inherit-product, device/motorola/sm8250-common/BoardConfigCommon.mk)
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 226517168128
@@ -25,3 +27,7 @@ BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 993096064
 endif
 BOARD_MOT_DP_SIZE := 7109345280
 BOARD_SUPER_PARTITION_SIZE := 14227079168
+
+
+# inherit from the proprietary version
+$(call inherit-product,  vendor/motorola/pstar/BoardConfigVendor.mk)
