@@ -2,20 +2,9 @@
 
 # Camera
 vendor/bin/vl53l1_daemon
-vendor/etc/pwr/PowerFeatureConfig.xml	
-vendor/etc/pwr/VideoPowerOptFeature.xml
-vendor/lib/com.qti.chiusecaseselector.so
-vendor/lib/com.qti.settings.kamorta.so
-vendor/lib/com.qti.settings.kodiak.so
-vendor/lib/com.qti.settings.mannar.so
-vendor/lib/com.qti.settings.sdm865.so
-vendor/lib/com.qti.settings.sm8350.so
-vendor/lib/com.qti.stats.common.so
 vendor/lib/libarcsoft_portrait_distortion_correction.so
 vendor/lib/libarcsoft_distortion_correction.so
 vendor/lib/libbitmlengine.so
-vendor/lib/libbitmlenginev2.so
-vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libcamerapostproc.so
 vendor/lib/libcamxexternalformatutils.so
@@ -24,32 +13,21 @@ vendor/lib/libcamxfdalgo.so
 vendor/lib/libcamxfdengine.so
 vendor/lib/libcamxifestriping.so
 vendor/lib/libcamximageformatutils.so
-vendor/lib/libcamxqsatalgo.so
 vendor/lib/libcamxstatscore.so
-vendor/lib/libcamxswispiqmodule.so
 vendor/lib/libcamxswprocessalgo.so
 vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libc2d_helper.so
 vendor/lib/libchilog.so
 vendor/lib/libcom.qti.chinodeutils.so
-vendor/lib/libipebpsstriping170.so
 vendor/lib/libipebpsstriping.so
-vendor/lib/libmmcamera_bestats.so
-vendor/lib/libmmcamera_cac3.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmmcamera_lscv35.so
-vendor/lib/libmmcamera_mfnr.so
-vendor/lib/libmmcamera_mfnr_t4.so
-vendor/lib/libmmcamera_pdpc.so
 vendor/lib/libmot_afd.so
 vendor/lib/libmot_chi_desktop_helper.so
 vendor/lib/libmot_engine_settings.so
 vendor/lib/libmotoisdataqueue.so
 vendor/lib/libmpbase.so
-vendor/lib/libofflinedump.so
 vendor/lib/libofflinelog.so
-vendor/lib/libopencv.so
 vendor/lib/libos.so
 vendor/lib/libpowercore.so
 vendor/lib/libswregistrationalgo.so
@@ -73,20 +51,9 @@ vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
-vendor/lib64/com.qti.chiusecaseselector.so
-vendor/lib64/com.qti.settings.kamorta.so
-vendor/lib64/com.qti.settings.kodiak.so
-vendor/lib64/com.qti.settings.mannar.so
-vendor/lib64/com.qti.settings.sdm865.so
-vendor/lib64/com.qti.settings.sm8350.so
-vendor/lib64/com.qti.stats.common.so
-vendor/lib64/libarcsoft_triple_sat.so
 vendor/lib64/libarcsoft_portrait_distortion_correction.so
 vendor/lib64/libarcsoft_distortion_correction.so
-vendor/lib64/libarcsoft_triple_zoomtranslator.so
 vendor/lib64/libbitmlengine.so
-vendor/lib64/libbitmlenginev2.so
-vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcamxexternalformatutils.so
@@ -95,33 +62,22 @@ vendor/lib64/libcamxfdalgo.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxifestriping.so
 vendor/lib64/libcamximageformatutils.so
-vendor/lib64/libcamxqsatalgo.so
 vendor/lib64/libcamxstatscore.so
-vendor/lib64/libcamxswispiqmodule.so
 vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libc2d_helper.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libipebpsstriping.so
-vendor/lib64/libmmcamera_bestats.so
-vendor/lib64/libmmcamera_cac3.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
-vendor/lib64/libmmcamera_lscv35.so
-vendor/lib64/libmmcamera_mfnr.so
-vendor/lib64/libmmcamera_mfnr_t4.so
-vendor/lib64/libmmcamera_pdpc.so
 vendor/lib64/libmot_afd.so
 vendor/lib64/libmot_chi_desktop_helper.so
 vendor/lib64/libmot_engine_settings.so
 vendor/lib64/libmotoisdataqueue.so
 vendor/lib64/libmpbase.so
-vendor/lib64/libofflinedump.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/liboffloadhal.so
-vendor/lib64/libopencv.so
 vendor/lib64/libos.so
 vendor/lib64/libpowercore.so
 vendor/lib64/libswregistrationalgo.so
@@ -241,22 +197,25 @@ vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so
 
 # Camera - eeprom
 vendor/lib/camera/com.mot.eeprom.mot_gt24p64b_ov16a1q_eeprom.so
-vendor/lib/camera/com.mot.eeprom.mot_ov02b1b_otp.so
+vendor/lib/camera/com.mot.eeprom.mot_gt24p64e_ov32b_eeprom.so
+vendor/lib/camera/com.mot.eeprom.mot_gt24p64e_s5khm2_eeprom.so
+vendor/lib/camera/com.mot.eeprom.mot_ov08a10_eeprom.so
 vendor/lib/camera/com.mot.eeprom.mot_ov16a10_gt9772.so
-vendor/lib/camera/com.mot.eeprom.mot_ov64b_gt9767.so
-vendor/lib/camera/com.mot.eeprom.mot_s5k4h7_front_otp.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a1q_eeprom.so
-vendor/lib64/camera/com.mot.eeprom.mot_ov02b1b_otp.so
+vendor/lib64/camera/com.mot.eeprom.mot_gt24p64e_ov32b_eeprom.so
+vendor/lib64/camera/com.mot.eeprom.mot_gt24p64e_s5khm2_eeprom.so
+vendor/lib64/camera/com.mot.eeprom.mot_ov08a10_eeprom.so
 vendor/lib64/camera/com.mot.eeprom.mot_ov16a10_gt9772.so
-vendor/lib64/camera/com.mot.eeprom.mot_ov64b_gt9767.so
-vendor/lib64/camera/com.mot.eeprom.mot_s5k4h7_front_otp.so
 
 # Camera - etc
+vendor/etc/camera/aec_golden_tele.bin
 vendor/etc/camera/arcsoft_calibration_u_dc.bin
 vendor/etc/camera/arcsoft_standalone_calibration_u_dc.bin
-vendor/etc/camera/dual_golden_depth.bin
+vendor/etc/camera/dual_golden_tele.bin
 vendor/etc/camera/dual_golden_wide.bin
+vendor/etc/camera/mot_engine_config.bin
 vendor/etc/camera/vidhance_calibration
+vendor/etc/camera/vidhance_calibration_32
 
 # Camera - feature2
 vendor/lib/com.qti.feature2.anchorsync.so
@@ -294,42 +253,42 @@ vendor/lib64/com.qti.feature2.swmf.so
 vendor/firmware/CAMERA_ICP.elf
 
 # Camera - sensor
-vendor/lib/camera/com.qti.sensor.mot_ov02b1b.so
+vendor/lib/camera/com.qti.sensor.mot_ov08a10.so
 vendor/lib/camera/com.qti.sensor.mot_ov16a10.so
 vendor/lib/camera/com.qti.sensor.mot_ov16a1q.so
-vendor/lib/camera/com.qti.sensor.mot_ov64b.so
-vendor/lib/camera/com.qti.sensor.mot_s5k4h7_front.so
-vendor/lib64/camera/com.qti.sensor.mot_ov02b1b.so
+vendor/lib/camera/com.qti.sensor.mot_ov32b.so
+vendor/lib/camera/com.qti.sensor.mot_s5khm2.so
+vendor/lib64/camera/com.qti.sensor.mot_ov08a10.so
 vendor/lib64/camera/com.qti.sensor.mot_ov16a10.so
 vendor/lib64/camera/com.qti.sensor.mot_ov16a1q.so
-vendor/lib64/camera/com.qti.sensor.mot_ov64b.so
-vendor/lib64/camera/com.qti.sensor.mot_s5k4h7_front.so
+vendor/lib64/camera/com.qti.sensor.mot_ov32b.so
+vendor/lib64/camera/com.qti.sensor.mot_s5khm2.so
 
 # Camera - sensormodule
-vendor/lib/camera/com.qti.sensormodule.mot_nio_ov02b1b.bin
-vendor/lib/camera/com.qti.sensormodule.mot_nio_ov16a10.bin
-vendor/lib/camera/com.qti.sensormodule.mot_nio_ov16a1q.bin
-vendor/lib/camera/com.qti.sensormodule.mot_nio_ov64b.bin
-vendor/lib/camera/com.qti.sensormodule.mot_nio_s5k4h7_front.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_nio_ov02b1b.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_nio_ov16a10.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_nio_ov16a1q.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_nio_ov64b.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_nio_s5k4h7_front.bin
+vendor/lib/camera/com.qti.sensormodule.mot_pstar_ov08a10.bin
+vendor/lib/camera/com.qti.sensormodule.mot_pstar_ov16a10.bin
+vendor/lib/camera/com.qti.sensormodule.mot_pstar_ov16a1q.bin
+vendor/lib/camera/com.qti.sensormodule.mot_pstar_ov32b.bin
+vendor/lib/camera/com.qti.sensormodule.mot_pstar_s5khm2.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_pstar_ov08a10.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_pstar_ov16a10.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_pstar_ov16a1q.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_pstar_ov32b.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_pstar_s5khm2.bin
 
 # Camera - tuned
 vendor/lib/camera/com.qti.tuned.default.bin
-vendor/lib/camera/com.qti.tuned.mot_nio_ov02b1b.bin
-vendor/lib/camera/com.qti.tuned.mot_nio_ov16a10.bin
-vendor/lib/camera/com.qti.tuned.mot_nio_ov16a1q.bin
-vendor/lib/camera/com.qti.tuned.mot_nio_ov64b.bin
-vendor/lib/camera/com.qti.tuned.mot_nio_s5k4h7.bin
+vendor/lib/camera/com.qti.tuned.mot_pstar_ov08a10.bin
+vendor/lib/camera/com.qti.tuned.mot_pstar_ov16a10.bin
+vendor/lib/camera/com.qti.tuned.mot_pstar_ov16a1q.bin
+vendor/lib/camera/com.qti.tuned.mot_pstar_ov32b.bin
+vendor/lib/camera/com.qti.tuned.mot_pstar_s5khm2.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.mot_nio_ov02b1b.bin
-vendor/lib64/camera/com.qti.tuned.mot_nio_ov16a10.bin
-vendor/lib64/camera/com.qti.tuned.mot_nio_ov16a1q.bin
-vendor/lib64/camera/com.qti.tuned.mot_nio_ov64b.bin
-vendor/lib64/camera/com.qti.tuned.mot_nio_s5k4h7.bin
+vendor/lib64/camera/com.qti.tuned.mot_pstar_ov08a10.bin
+vendor/lib64/camera/com.qti.tuned.mot_pstar_ov16a10.bin
+vendor/lib64/camera/com.qti.tuned.mot_pstar_ov16a1q.bin
+vendor/lib64/camera/com.qti.tuned.mot_pstar_ov32b.bin
+vendor/lib64/camera/com.qti.tuned.mot_pstar_s5khm2.bin
 
 # Display calibration data
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667.xml
@@ -476,8 +435,8 @@ vendor/etc/thermal-engine-pstar-perf.conf
 
 # Touchscreen firmware
 vendor/firmware/csot_stm_fts_production_limits.csv
-vendor/firmware/stmicro-csot-fts3639-21071112-00081015-berlin.ftb
-vendor/firmware/stmicro-visionox-fts3639-21071011-0008200b-berlin.ftb
+vendor/firmware/stmicro-csot-fts3639-21071112-00081015-pstar.ftb
+vendor/firmware/stmicro-visionox-fts3639-21071011-0008200b-pstar.ftb
 vendor/firmware/visionox_stm_fts_production_limits.csv
 
 
