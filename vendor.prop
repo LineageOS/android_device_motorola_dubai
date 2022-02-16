@@ -1,0 +1,9 @@
+# Camera
+persist.vendor.camera.physical.num=4
+
+# Display
+vendor.display.enable_camera_smooth=1
+vendor.display.enable_allow_idle_fallback=1
+
+# NFC
+ro.venndor.hw.nfc=st

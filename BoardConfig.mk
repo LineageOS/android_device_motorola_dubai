@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/motorola/pstar
+
 # Inherit from motorola sm8250-common
 $(call inherit-product, device/motorola/sm8250-common/BoardConfigCommon.mk)
 
@@ -31,6 +33,8 @@ endif
 BOARD_MOT_DP_SIZE := 7109345280
 BOARD_SUPER_PARTITION_SIZE := 14227079168
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # inherit from the proprietary version
 $(call inherit-product,  vendor/motorola/pstar/BoardConfigVendor.mk)
