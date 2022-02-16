@@ -35,6 +35,21 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kona.xml \
     $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0 \
+    android.hardware.nfc@1.1 \
+    android.hardware.nfc@1.2 \
+    android.hardware.nfc@1.2-service.st \
+    android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.1 \
+	android.hardware.secure_element@1.2-service.st \
+	com.android.nfc_extras \
+    NfcNci \
+	SecureElement \
+    Tag \
+	nfc_nci.st21nfc.default
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml
