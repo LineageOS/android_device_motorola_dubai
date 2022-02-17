@@ -1,0 +1,23 @@
+
+# This file needs to be executed by vendor_init at boot of the device,
+# both in normal and factory mode.
+
+on post-fs
+	# Change ownership and permision of st nfc device
+	chown nfc nfc /dev/st21nfc
+	chmod 0660 /dev/st21nfc
+
+on property:ro.vendor.hw.nfc=true && property:persist.vendor.radio.multisim.config=*
+	start vendor.stflashtool
+
+on property:ro.vendor.hw.nfc=st && property:persist.vendor.radio.multisim.config=*
+	start vendor.stflashtool
+
+on property:ro.vendor.hw.nfc=ese_st && property:persist.vendor.radio.multisim.config=*
+	start vendor.stflashtool
+
+service vendor.stflashtool /vendor/bin/STFlashTool -c /vendor/etc/st21nfc_conf.txt -P vendor.nfc.fw_status
+	group nfc
+	user nfc
+	oneshot
+	disabled
