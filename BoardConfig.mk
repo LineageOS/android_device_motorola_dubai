@@ -22,6 +22,9 @@ $(call inherit-product, device/motorola/sm8250-common/BoardConfigCommon.mk)
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
+# Kernel
+TARGET_KERNEL_ADDITIONAL_CONFIG := vendor/lineage_pstar_defconfig
+
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 226517168128
 ifneq ($(WITH_GMS),true)
