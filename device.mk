@@ -21,7 +21,7 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Inherit from motorola sm8250-common
-$(call inherit-product, device/motorola/sm8250-common/common.mk)
+$(call inherit-product, device/motorola/sm8250-common/sm8250.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \

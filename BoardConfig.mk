@@ -17,7 +17,7 @@
 DEVICE_PATH := device/motorola/pstar
 
 # Inherit from motorola sm8250-common
-$(call inherit-product, device/motorola/sm8250-common/BoardConfigCommon.mk)
+-include device/motorola/sm8250-common/BoardConfigCommon.mk
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -40,4 +40,4 @@ BOARD_SUPER_PARTITION_SIZE := 14227079168
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # inherit from the proprietary version
-$(call inherit-product,  vendor/motorola/pstar/BoardConfigVendor.mk)
+-include vendor/motorola/pstar/BoardConfigVendor.mk
