@@ -320,6 +320,9 @@ vendor/etc/libnfc-nci-st.conf
 vendor/etc/st21nfc_conf_ds.txt
 vendor/etc/st21nfc_conf_ss.txt
 
+# OEM
+vendor/etc/vhw.xml
+
 # Sensor - configs
 vendor/etc/sensors/config/ak991x_0.json
 vendor/etc/sensors/config/default_sensors.json
