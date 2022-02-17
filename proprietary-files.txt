@@ -294,6 +294,22 @@ vendor/lib64/camera/com.qti.tuned.mot_pstar_s5khm2.bin
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667.xml
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_visionox_1080p_dsc_667.xml
 
+# Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice
+vendor/bin/hw/goodix_ident
+vendor/bin/init.oem.fingerprint.overlay.sh
+vendor/bin/init.oem.fingerprint2.sh
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc
+vendor/etc/init/init.gf_ident.rc
+vendor/lib64/com.fingerprints.extension@1.0.so
+vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so
+vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+
 # NFC
 vendor/bin/STFlashTool
 vendor/etc/init/hw/init.vendor.st21nfc.rc
