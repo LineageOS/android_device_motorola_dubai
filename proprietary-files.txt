@@ -2,8 +2,10 @@
 
 # Camera
 vendor/bin/vl53l1_daemon
-vendor/lib/libarcsoft_portrait_distortion_correction.so
 vendor/lib/libarcsoft_distortion_correction.so
+vendor/lib/libarcsoft_dualcam_refocus_image.so
+vendor/lib/libarcsoft_dualcam_refocus_video.so
+vendor/lib/libarcsoft_portrait_distortion_correction.so
 vendor/lib/libbitmlengine.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libcamerapostproc.so
@@ -19,6 +21,7 @@ vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libc2d_helper.so
 vendor/lib/libchilog.so
 vendor/lib/libcom.qti.chinodeutils.so
+vendor/lib/libgui_vendor.so
 vendor/lib/libipebpsstriping.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
@@ -34,7 +37,15 @@ vendor/lib/libswregistrationalgo.so
 vendor/lib/libsynx.so
 vendor/lib/libthreadutils.so
 vendor/lib/libvideooptfeature.so
+vendor/lib/libmotcameramodulemonitor.so
+vendor/lib64/libmotcameramodulemonitor.so
+vendor/lib/libmot_flash_aw3643.so
+vendor/lib64/libmot_flash_aw3643.so
+vendor/lib/libfcell.so
+vendor/lib64/libfcell.so
 vendor/lib/libvideoutils.so
+vendor/lib/libcamxncs.so
+vendor/lib64/libcamxncs.so
 vendor/lib/libvidhance.so
 vendor/lib/libvidhance_active_ois.so
 vendor/lib/libvidhance_dmbr.so
@@ -51,8 +62,10 @@ vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
-vendor/lib64/libarcsoft_portrait_distortion_correction.so
 vendor/lib64/libarcsoft_distortion_correction.so
+vendor/lib64/libarcsoft_dualcam_refocus_image.so
+vendor/lib64/libarcsoft_dualcam_refocus_video.so
+vendor/lib64/libarcsoft_portrait_distortion_correction.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamerapostproc.so
@@ -68,6 +81,7 @@ vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libc2d_helper.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
+vendor/lib64/libgui_vendor.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
@@ -251,6 +265,20 @@ vendor/lib64/com.qti.feature2.swmf.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
+
+# Camera - Motorola
+vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
+vendor/bin/hw/motorola.hardware.camera.imgtuner@1.0-service
+vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc
+vendor/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc
+vendor/lib/hw/motorola.hardware.camera.imgtuner@1.0-impl.so
+vendor/lib/motorola.hardware.camera.desktop@1.0.so
+vendor/lib/motorola.hardware.camera.desktop@2.0.so
+vendor/lib/motorola.hardware.camera.imgtuner@1.0.so
+vendor/lib64/hw/motorola.hardware.camera.imgtuner@1.0-impl.so
+vendor/lib64/motorola.hardware.camera.desktop@1.0.so
+vendor/lib64/motorola.hardware.camera.desktop@2.0.so
+vendor/lib64/motorola.hardware.camera.imgtuner@1.0.so
 
 # Camera - sensor
 vendor/lib/camera/com.qti.sensor.mot_ov08a10.so
