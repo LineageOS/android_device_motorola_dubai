@@ -15,7 +15,7 @@
 script_name=${0##*/}
 script_name=${script_name%.*}
 function notice {
-    log -t "$scriptname" -i "$*"
+    log -t "$scriptname" -p i "$*"
 }
 
 persist_fps_id=/mnt/vendor/persist/fps/vendor_id
