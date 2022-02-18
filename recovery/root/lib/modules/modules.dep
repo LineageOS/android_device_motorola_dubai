@@ -1,0 +1,6 @@
+/lib/modules/mmi_relay.ko:
+/lib/modules/sensors_class.ko:
+/lib/modules/touchscreen_mmi.ko: /lib/modules/sensors_class.ko /lib/modules/mmi_relay.ko
+/lib/modules/mmi_annotate.ko:
+/lib/modules/mmi_info.ko: /lib/modules/mmi_annotate.ko
+/lib/modules/stmicro_mmi.ko: /lib/modules/touchscreen_mmi.ko /lib/modules/sensors_class.ko/lib/modules/mmi_relay.ko /lib/modules/mmi_info.ko /lib/modules/mmi_annotate.ko
