@@ -31,6 +31,11 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Inherit from motorola sm8250-common
 $(call inherit-product, device/motorola/sm8250-common/sm8250.mk)
 
+# Overlay
+PRODUCT_PACKAGES += \
+    FrameworksResPstar \
+    SystemUIResPstar
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
