@@ -21,6 +21,11 @@ TARGET_SCREEN_WIDTH := 1080
 # Screen
 TARGET_SCREEN_DENSITY := 400
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := 400dpi
+PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
+
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Inherit from motorola sm8250-common
