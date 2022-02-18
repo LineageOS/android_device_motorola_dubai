@@ -38,5 +38,8 @@ BOARD_SUPER_PARTITION_SIZE := 14227079168
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Recovery
+TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
+
 # inherit from the proprietary version
 -include vendor/motorola/pstar/BoardConfigVendor.mk
