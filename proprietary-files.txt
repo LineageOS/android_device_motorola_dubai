@@ -1,7 +1,16 @@
 # All unpinned blobs below are extracted from RRA31.Q3-19-19
 
+# ACDB Data
+vendor/etc/acdbdata/Bluetooth_cal.acdb
+vendor/etc/acdbdata/General_cal.acdb
+vendor/etc/acdbdata/Global_cal.acdb
+vendor/etc/acdbdata/Handset_cal.acdb
+vendor/etc/acdbdata/Hdmi_cal.acdb
+vendor/etc/acdbdata/Headset_cal.acdb
+vendor/etc/acdbdata/Speaker_cal.acdb
+vendor/etc/acdbdata/adsp_avs_config.acdb
+
 # Camera
-vendor/bin/vl53l1_daemon
 vendor/lib/libarcsoft_distortion_correction.so
 vendor/lib/libarcsoft_dualcam_refocus_image.so
 vendor/lib/libarcsoft_dualcam_refocus_video.so
@@ -317,6 +326,11 @@ vendor/lib64/camera/com.qti.tuned.mot_pstar_ov16a10.bin
 vendor/lib64/camera/com.qti.tuned.mot_pstar_ov16a1q.bin
 vendor/lib64/camera/com.qti.tuned.mot_pstar_ov32b.bin
 vendor/lib64/camera/com.qti.tuned.mot_pstar_s5khm2.bin
+
+# Camera - VL53L1
+vendor/bin/vl53l1_daemon
+vendor/lib64/libvl53l1_daemon.so
+vendor/lib64/sensors.tof.vl53l1.so
 
 # Display calibration data
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667.xml
