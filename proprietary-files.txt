@@ -115,7 +115,7 @@ vendor/lib64/libvidhance_fbc.so
 vendor/lib64/libvidhance_horizon_correction.so
 vendor/lib64/libvidhance_stabilizer.so
 vendor/lib64/libvidhance_zoom_stabilization.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|3fa4a0e97aef4bfffa9ca426d5297aa4280427cc
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
