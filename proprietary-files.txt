@@ -339,10 +339,12 @@ vendor/etc/qdcm_calib_data_mipi_mot_cmd_visionox_1080p_dsc_667.xml
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice
-vendor/bin/hw/goodix_ident
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc
+vendor/bin/hw/fpc_ident:vendor/bin/fpc_ident
 vendor/bin/init.oem.fingerprint.overlay.sh
 vendor/bin/init.oem.fingerprint2.sh
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc
 vendor/etc/init/init.gf_ident.rc
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so
