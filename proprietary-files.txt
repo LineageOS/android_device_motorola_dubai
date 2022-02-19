@@ -274,6 +274,7 @@ vendor/lib64/com.qti.feature2.swmf.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
+vendor/firmware/mot_dw9781c.prog
 
 # Camera - Motorola
 vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
