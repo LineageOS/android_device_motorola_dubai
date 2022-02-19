@@ -5,5 +5,8 @@ persist.vendor.camera.physical.num=4
 vendor.display.enable_camera_smooth=1
 vendor.display.enable_allow_idle_fallback=1
 
+# Motorola
+ro.mot.build.customerid=retail
+
 # NFC
 ro.venndor.hw.nfc=st
