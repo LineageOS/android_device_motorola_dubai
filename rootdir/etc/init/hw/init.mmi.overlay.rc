@@ -31,6 +31,8 @@ on post-fs
     # Sensors
     chown system system /sys/devices/platform/soc/a94000.spi/spi_master/spi0/spi0.0/touchscreen/primary/double_tap_enabled
     chown system system /sys/devices/platform/soc/a94000.spi/spi_master/spi0/spi0.0/touchscreen/primary/double_tap_pressed
+    chown system system /sys/devices/platform/soc/a94000.spi/spi_master/spi0/spi0.0/touchscreen/primary/udfps_enabled
+    chown system system /sys/devices/platform/soc/a94000.spi/spi_master/spi0/spi0.0/touchscreen/primary/udfps_pressed
 
 on post-fs-data
     mkdir /mnt/vendor/persist/tof 0755 vendor_tcmd camera
