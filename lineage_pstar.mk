@@ -28,7 +28,7 @@ PRODUCT_NAME := lineage_pstar
 PRODUCT_DEVICE := pstar
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_BRAND := Motorola
-PRODUCT_MODEL := XT2153-1
+PRODUCT_MODEL := motorola edge 20 pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
