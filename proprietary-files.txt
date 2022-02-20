@@ -276,17 +276,12 @@ vendor/firmware/mot_dw9781c.prog
 
 # Camera - Motorola
 vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
-vendor/bin/hw/motorola.hardware.camera.imgtuner@1.0-service
 vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc
 vendor/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc
-vendor/lib/hw/motorola.hardware.camera.imgtuner@1.0-impl.so
 vendor/lib/motorola.hardware.camera.desktop@1.0.so
 vendor/lib/motorola.hardware.camera.desktop@2.0.so
-vendor/lib/motorola.hardware.camera.imgtuner@1.0.so
-vendor/lib64/hw/motorola.hardware.camera.imgtuner@1.0-impl.so
 vendor/lib64/motorola.hardware.camera.desktop@1.0.so
 vendor/lib64/motorola.hardware.camera.desktop@2.0.so
-vendor/lib64/motorola.hardware.camera.imgtuner@1.0.so
 
 # Camera - sensor
 vendor/lib/camera/com.qti.sensor.mot_ov08a10.so
