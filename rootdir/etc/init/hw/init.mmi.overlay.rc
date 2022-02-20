@@ -37,7 +37,7 @@ on fs
 
 on post-fs
    # "double tap" gesture
-   chown root input /sys/class/sensors/dt-gesture/enable
+   chown system system /sys/class/sensors/dt-gesture/enable
    chmod 0660 /sys/class/sensors/dt-gesture/enable
    chown root input /sys/class/sensors/dt-gesture/enable_wakeup
    chmod 0660 /sys/class/sensors/dt-gesture/enable_wakeup
