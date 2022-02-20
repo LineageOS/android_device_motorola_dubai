@@ -4,7 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <dimen name="real_rounded_corner_radius">90px</dimen>
+    <dimen name="rounded_corner_content_padding">6px</dimen>
 
     <!-- the padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">0dp</dimen>
@@ -19,4 +19,6 @@
 
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">@dimen/status_bar_padding_start</dimen>
+
+	<dimen name="system_icons_keyguard_padding_end">10.0px</dimen>
 </resources>

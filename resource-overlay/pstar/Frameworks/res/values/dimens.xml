@@ -12,4 +12,6 @@
     <dimen name="status_bar_height_landscape">24dp</dimen>
     <!-- Height of area above QQS where battery/time go -->
     <dimen name="quick_qs_offset_height">@dimen/status_bar_height_portrait</dimen>
+
+	<dimen name="status_bar_padding_top_portrait">10.0px</dimen>
 </resources>
