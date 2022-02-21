@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
-    <item name="screen.on">130</item>
-    <item name="screen.full">400</item>
+    <item name="screen.on">100</item>
+    <item name="screen.full">450</item>
     <item name="wifi.on">1.2</item>
     <item name="wifi.active">68</item>
     <item name="wifi.scan">75.7</item>
@@ -154,7 +154,7 @@
     <array name="memory.bandwidths">
         <value>20</value>
     </array>
-    <item name="battery.capacity">5000</item>
+    <item name="battery.capacity">4500</item>
     <item name="modem.controller.idle">5</item>
     <item name="modem.controller.rx">130</item>
     <item name="modem.controller.tx">160</item>
