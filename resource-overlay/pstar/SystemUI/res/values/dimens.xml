@@ -32,5 +32,16 @@
     <!-- Location on the screen of the center of the physical volume up/down buttons. -->
     <dimen name="physical_volume_up_button_center_screen_location_y">392px</dimen>
     <dimen name="physical_volume_down_button_center_screen_location_y">494px</dimen>
-	
+
+    <!-- Configure  protection around the front-facing camera -->
+    <string name="config_frontBuiltInDisplayCutoutProtection">
+        M 661,72
+        a 57,57 0 1 0 114,0
+        a 57,57 0 1 0 -114,0
+        Z
+    </string>
+
+    <!-- Camera 1 is the front camera -->
+    <string name="config_protectedCameraId">1</string>
+
 </resources>
