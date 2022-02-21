@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from RRA31.Q3-19-19
+# All unpinned blobs below are extracted from RRA31.Q3-19-86
 
 # ACDB Data
 vendor/etc/acdbdata/Bluetooth_cal.acdb
@@ -493,8 +493,8 @@ vendor/etc/thermal-engine-pstar-perf.conf
 
 # Touchscreen firmware
 vendor/firmware/csot_stm_fts_production_limits.csv
-vendor/firmware/stmicro-csot-fts3639-21071112-00081015-pstar.ftb
-vendor/firmware/stmicro-visionox-fts3639-21071011-0008200b-pstar.ftb
+vendor/firmware/stmicro-csot-fts3639-21120227-de141027-pstar.ftb
+vendor/firmware/stmicro-visionox-fts3639-21072312-0009200c-pstar.ftb
 vendor/firmware/visionox_stm_fts_production_limits.csv
 
 
