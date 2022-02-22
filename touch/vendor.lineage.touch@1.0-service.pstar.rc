@@ -1,0 +1,5 @@
+service vendor.touch-hal-1-0 /vendor/bin/hw/vendor.lineage.touch@1.0-service.pstar
+    interface vendor.lineage.touch@1.0::IGloveMode default
+    class hal
+    user system
+    group system
