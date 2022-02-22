@@ -63,7 +63,6 @@ vendor/lib/libvidhance_horizon_correction.so
 vendor/lib/libvidhance_stabilizer.so
 vendor/lib/libvidhance_zoom_stabilization.so
 vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib/vendor.qti.hardware.camera.postproc@1.0.so
 vendor/lib/camera/fdconfigpreview.bin
 vendor/lib/camera/fdconfigpreviewlite.bin
 vendor/lib/camera/fdconfigvideo.bin
@@ -98,7 +97,6 @@ vendor/lib64/libmot_engine_settings.so
 vendor/lib64/libmotoisdataqueue.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libofflinelog.so
-vendor/lib64/liboffloadhal.so
 vendor/lib64/libos.so
 vendor/lib64/libpowercore.so
 vendor/lib64/libswregistrationalgo.so
@@ -116,7 +114,6 @@ vendor/lib64/libvidhance_horizon_correction.so
 vendor/lib64/libvidhance_stabilizer.so
 vendor/lib64/libvidhance_zoom_stabilization.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
