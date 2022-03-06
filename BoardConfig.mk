@@ -22,6 +22,9 @@ DEVICE_PATH := device/motorola/pstar
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Kernel
 TARGET_KERNEL_ADDITIONAL_CONFIG := vendor/lineage_pstar_defconfig
 
