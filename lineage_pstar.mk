@@ -26,8 +26,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_pstar
 PRODUCT_DEVICE := pstar
-PRODUCT_MANUFACTURER := Motorola
-PRODUCT_BRAND := Motorola
+PRODUCT_MANUFACTURER := motorola
+PRODUCT_BRAND := motorola
 PRODUCT_MODEL := motorola edge 20 pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
