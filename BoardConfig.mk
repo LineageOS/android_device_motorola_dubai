@@ -19,6 +19,9 @@ DEVICE_PATH := device/motorola/pstar
 # Inherit from motorola sm8250-common
 -include device/motorola/sm8250-common/BoardConfigCommon.mk
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := pstar
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
@@ -42,6 +45,7 @@ BOARD_SUPER_PARTITION_SIZE := 14227079168
 TARGET_TAP_TO_WAKE_NODE := "/sys/class/sensors/dt-gesture/enable"
 
 # Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
