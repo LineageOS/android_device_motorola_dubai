@@ -33,7 +33,6 @@ PRODUCT_MODEL := motorola edge 20 pro
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=pstar \
     TARGET_PRODUCT=pstar_retail \
     PRIVATE_BUILD_DESC="pstar_retail-user 11 RRA31.Q3-19-86 dbe8d release-keys"
 
