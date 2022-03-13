@@ -19,18 +19,18 @@
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
 
-#include "GloveMode.h"
+#include "HighTouchPollingRate.h"
 
-using ::vendor::lineage::touch::V1_0::IGloveMode;
-using ::vendor::lineage::touch::V1_0::implementation::GloveMode;
+using ::vendor::lineage::touch::V1_0::IHighTouchPollingRate;
+using ::vendor::lineage::touch::V1_0::implementation::HighTouchPollingRate;
 
 int main() {
-    android::sp<IGloveMode> gloveMode = new GloveMode();
+    android::sp<IHighTouchPollingRate> highTouchPollingRate = new HighTouchPollingRate();
 
     android::hardware::configureRpcThreadpool(1, true /*callerWillJoin*/);
 
-    if (gloveMode->registerAsService() != android::OK) {
-        LOG(ERROR) << "Cannot register touchscreen glove HAL service.";
+    if (highTouchPollingRate->registerAsService() != android::OK) {
+        LOG(ERROR) << "Cannot register touchscreen high polling rate HAL service.";
         return 1;
     }
 

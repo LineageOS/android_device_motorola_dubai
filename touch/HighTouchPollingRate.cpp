@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "GloveModeService"
+#define LOG_TAG "HighTouchPollingRateService"
 
-#include "GloveMode.h"
+#include "HighTouchPollingRate.h"
 
 #include <fstream>
 
@@ -28,7 +28,7 @@ namespace implementation {
 
 const std::string kInterpolationPath = "/sys/class/touchscreen/primary/interpolation";
 
-Return<bool> GloveMode::isEnabled() {
+Return<bool> HighTouchPollingRate::isEnabled() {
     std::ifstream file(kInterpolationPath);
     int enabled;
     file >> enabled;
@@ -39,7 +39,7 @@ Return<bool> GloveMode::isEnabled() {
     return false;
 }
 
-Return<bool> GloveMode::setEnabled(bool enabled) {
+Return<bool> HighTouchPollingRate::setEnabled(bool enabled) {
     std::ofstream file(kInterpolationPath);
     file << (enabled ? "1" : "0");
     return !file.fail();

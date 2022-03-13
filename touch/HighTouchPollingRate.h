@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include <vendor/lineage/touch/1.0/IGloveMode.h>
+#include <vendor/lineage/touch/1.0/IHighTouchPollingRate.h>
 
 namespace vendor {
 namespace lineage {
@@ -26,9 +26,9 @@ namespace implementation {
 
 using ::android::hardware::Return;
 
-class GloveMode : public IGloveMode {
+class HighTouchPollingRate : public IHighTouchPollingRate {
   public:
-    // Methods from ::vendor::lineage::touch::V1_0::IGloveMode follow.
+    // Methods from ::vendor::lineage::touch::V1_0::IHighTouchPollingRate follow.
     Return<bool> isEnabled() override;
     Return<bool> setEnabled(bool enabled) override;
 };

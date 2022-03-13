@@ -21,7 +21,7 @@ cc_binary {
     relative_install_path: "hw",
     proprietary: true,
     srcs: [
-        "GloveMode.cpp",
+        "HighTouchPollingRate.cpp",
         "service.cpp",
     ],
     shared_libs: [
