@@ -1,0 +1,7 @@
+msm_drm.ko
+mmi_relay.ko
+sensors_class.ko
+touchscreen_mmi.ko
+mmi_annotate.ko
+mmi_info.ko
+stmicro_mmi.ko
