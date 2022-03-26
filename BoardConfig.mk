@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/pstar
+DEVICE_PATH := device/motorola/berlin
 
-# Inherit from motorola sm8250-common
--include device/motorola/sm8250-common/BoardConfigCommon.mk
+# Inherit from motorola sm7325-common
+-include device/motorola/sm7325-common/BoardConfigCommon.mk
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := pstar
+TARGET_BOOTLOADER_BOARD_NAME := berlin
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -29,7 +29,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/lineage_pstar.config
+TARGET_KERNEL_CONFIG += vendor/lineage_berlin.config
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 226517168128
@@ -55,4 +55,4 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 VENDOR_SECURITY_PATCH := 2021-12-01
 
 # inherit from the proprietary version
--include vendor/motorola/pstar/BoardConfigVendor.mk
+-include vendor/motorola/berlin/BoardConfigVendor.mk

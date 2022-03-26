@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "SystemUIResPstar",
+    name: "FrameworksResBerlin",
     sdk_version: "current",
     vendor: true
 }

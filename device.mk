@@ -28,13 +28,13 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
-# Inherit from motorola sm8250-common
-$(call inherit-product, device/motorola/sm8250-common/sm8250.mk)
+# Inherit from motorola sm7325-common
+$(call inherit-product, device/motorola/sm7325-common/sm7325.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
-    FrameworksResPstar \
-    SystemUIResPstar
+    FrameworksResBerlin \
+    SystemUIResBerlin
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -60,7 +60,7 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/bin/*.sh),\
 
 # Lineage Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.pstar
+    vendor.lineage.touch@1.0-service.berlin
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -85,4 +85,4 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/motorola/pstar/pstar-vendor.mk)
+$(call inherit-product, vendor/motorola/berlin/berlin-vendor.mk)

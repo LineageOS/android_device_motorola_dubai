@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_pstar.mk
+    $(LOCAL_DIR)/lineage_berlin.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_pstar-user \
-    lineage_pstar-userdebug \
-    lineage_pstar-eng
+    lineage_berlin-user \
+    lineage_berlin-userdebug \
+    lineage_berlin-eng
