@@ -415,7 +415,6 @@ vendor/lib64/libgf_ca.so
 
 # NFC
 vendor/bin/STFlashTool
-vendor/etc/init/hw/init.vendor.st21nfc.rc
 
 # NFC - configs
 vendor/etc/libnfc-hal-st.conf

@@ -1,158 +1,90 @@
-# NFC ST21NFC
 import /vendor/etc/init/hw/init.vendor.st21nfc.rc
 
-on early-init
-   setprop ro.vendor.device_edition ${ro.boot.edition}
-   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules qpnp-smbcharger-mmi qpnp_adaptive_charge
-   exec u:r:vendor_modprove:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules touchscreen_mmi.ko stmicro_mmi.ko
+on early-init && property:ro.bootmode=mot-factory
+    insmod /vendor/lib/modules/moto_f_usbnet.ko
 
-on mmi-priority
-   # Only high priority MMI DLKMs loaded here
-   # For instance, sensor_class referenced from several DLKMs
-   # and needs to load first. Touchscreen might need extra time
-   # to perform firmware update if necessary
-   setprop vendor.mmi_init.stage priority
-   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules sensors_class.ko
+on early-init
+   exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/${ro.vendor.mot.gki.path} mmi_annotate mmi_info mmi_relay
+
+on early-init
+   insmod /vendor/lib/modules/bm_adsp_ulog.ko
+   insmod /vendor/lib/modules/mmi_charger.ko
+   insmod /vendor/lib/modules/qti_glink_charger.ko
+   insmod /vendor/lib/modules/cirrus_wm_adsp.ko
+   insmod /vendor/lib/modules/cirrus_cs35l41.ko
+   insmod /vendor/lib/modules/mmi_sys_temp.ko
+   insmod /vendor/lib/modules/wl2864c.ko
+   insmod /vendor/lib/modules/goodix_mmi.ko
+   insmod /vendor/lib/modules/camera.ko
+   insmod /vendor/lib/modules/aw8695.ko
+   insmod /vendor/lib/modules/cci_intf.ko
+   insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
+   start vendor.mmi_modules
+   wait_for_prop init.svc.vendor.mmi_modules stopped
 
 on fs
-   # Majority of MMI DLKMs should be in this group
-   setprop vendor.mmi_init.stage common
-   insmod /vendor/lib/modules/wl2866d.ko
-   insmod /vendor/lib/modules/mmi_info.ko
-   insmod /vendor/lib/modules/mmi_annotate.ko
-   insmod /vendor/lib/modules/mmi_sys_temp.ko
-   insmod /vendor/lib/modules/qpnp-power-on-mmi.ko
-   insmod /vendor/lib/modules/bq2597x_mmi.ko
-   insmod /vendor/lib/modules/mmi_parallel_charger.ko
-   insmod /vendor/lib/modules/mmi_parallel_charger_qc3p.ko
-   insmod /vendor/lib/modules/mmi_annotate.ko
-   insmod /vendor/lib/modules/mmi_info.ko
-   insmod /vendor/lib/modules/tzlog_dump.ko
-   insmod /vendor/lib/modules/watchdog_cpu_ctx.ko
-   insmod /vendor/lib/modules/mmi_relay.ko
-   insmod /vendor/lib/modules/sx937x_sar.ko
-   insmod /vendor/lib/modules/st21nfc.ko
-   insmod /vendor/lib/modules/stmvl53l1.ko
-   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules aw882xx_k419.ko aw8695.ko
-
-on post-fs
-   # "double tap" gesture
-   chown system system /sys/class/sensors/dt-gesture/enable
-   chmod 0660 /sys/class/sensors/dt-gesture/enable
-   chown root input /sys/class/sensors/dt-gesture/enable_wakeup
-   chmod 0660 /sys/class/sensors/dt-gesture/enable_wakeup
-   chown root input /sys/class/sensors/dt-gesture/flush
-   chmod 0660 /sys/class/sensors/dt-gesture/flush
-   chown root input /sys/class/sensors/dt-gesture/max_latency
-   chmod 0660 /sys/class/sensors/dt-gesture/max_latency
-   chown root input /sys/class/sensors/dt-gesture/poll_delay
-   chmod 0660 /sys/class/sensors/dt-gesture/poll_delay
-
-service vendor.vl53l1_daemon /vendor/bin/vl53l1_daemon
-    class late_start
-    user root
-    group root
-    socket vl53l1_daemon stream 660 root system
-
-service vendor.mmi-laser-sh /vendor/bin/init.mmi.laser.sh
-    class core
-    user root
-    oneshot
-
-on init
-    write /sys/block/zram0/comp_algorithm lz4
-
-on boot
-   # Add for goodix fingerprint
-   chown system system /dev/goodix_fp
-   chmod 0664 /dev/goodix_fp
-   mkdir /data/vendor/gf_data 0770 system system
-   mkdir /mnt/vendor/persist/goodix 0770 system system
-   # Add for CQA fps calibration test
-   chown system system /sys/class/backlight/panel0-backlight/brightness
-   chown system system /d/dri/0/debug/motUtil
-   chmod 0666 /d/dri/0/debug/motUtil;
-   chmod 0666 /sys/class/backlight/panel0-backlight/brightness
-   # Set wls perms for HAL
-   chown system system /sys/class/power_supply/wireless/device/tx_mode
-   #Add for laser
-   chown system system sys/class/laser/stmvl53l1/enable_sar
-   chmod 0660 sys/class/laser/stmvl53l1/enable_sar
-   chown system system sys/class/laser/stmvl53l1/set_delay_ms
-   chmod 0660 sys/class/laser/stmvl53l1/set_delay_ms
-   chown system system sys/class/laser/stmvl53l1/autonomous_config
-   chmod 0660 sys/class/laser/stmvl53l1/autonomous_config
-   chown system system sys/class/laser/stmvl53l1/enable_ps_sensor
-   chmod 0660 sys/class/laser/stmvl53l1/enable_ps_sensor
-   chown system system sys/class/laser/stmvl53l1/do_flush
-   chmod 0660 sys/class/laser/stmvl53l1/do_flush
-   chown system /sys/devices/virtual/laser/stmvl53l1/enable_sar
-   chmod 0660 /sys/devices/virtual/laser/stmvl53l1/enable_sar
-   chown system /sys/devices/virtual/laser/stmvl53l1/set_delay_ms
-   chmod 0660 /sys/devices/virtual/laser/stmvl53l1/set_delay_ms
-   chown system /sys/devices/virtual/laser/stmvl53l1/do_flush
-   chmod 0660 /sys/devices/virtual/laser/stmvl53l1/do_flush
-   chmod 0660 /sys/devices/virtual/laser/stmvl53l1/autonomous_config
-   chown system /sys/devices/virtual/laser/stmvl53l1/autonomous_config
-   chmod 0660 /sys/devices/virtual/laser/stmvl53l1/enable_ps_sensor
-   chown system /sys/devices/virtual/laser/stmvl53l1/enable_ps_sensor
-   chmod 0660 /sys/devices/virtual/laser/stmvl53l1/timing_budget
-   chown system /sys/devices/virtual/laser/stmvl53l1/timing_budget
-   chown system system /sys/devices/virtual/input/input1/timing_budget
-   chmod 0660 /sys/devices/virtual/input/input1/timing_budget
-   chmod 0664 /mnt/vendor/persist/camera/focus/offset_cal
-   chmod 0664 /mnt/vendor/persist/camera/focus/cal_data
-   # Touch grip suppression control
-   chown system system /sys/class/touchscreen/primary/suppression
-   chmod 0660 /sys/class/touchscreen/primary/suppression
-   chown system system /sys/class/touchscreen/primary/pill_region
-   chmod 0660 /sys/class/touchscreen/primary/pill_region
-   chown system system /sys/class/touchscreen/primary/hold_distance
-   chmod 0660 /sys/class/touchscreen/primary/hold_distance
-   chown system system /sys/class/touchscreen/primary/gs_distance
-   chmod 0660 /sys/class/touchscreen/primary/gs_distance
-   chown system system /sys/class/touchscreen/primary/rotate
-   chmod 0660 /sys/class/touchscreen/primary/rotate
-   chown system system /sys/class/touchscreen/primary/interpolation
-   chmod 0660 /sys/class/touchscreen/primary/interpolation
-   chown system system /sys/class/touchscreen/primary/edge
-   chmod 0660 /sys/class/touchscreen/primary/edge
-   # Change ownership for capsensor
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch0/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch0/poll_delay
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch1/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch1/poll_delay
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch2/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch2/poll_delay
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch3/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch3/poll_delay
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch4/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch4/poll_delay
-   chown system system /sys/class/capsense/reset
-   chown system system /sys/class/capsense/int_state
-   # Set adaptive charging perms for HAL
-   chown system system /sys/module/qpnp_adaptive_charge/parameters/upper_limit
-   chown system system /sys/module/qpnp_adaptive_charge/parameters/lower_limit
-   write /proc/sys/kernel/hung_task_timeout_secs 120
-   # Change ownership and permission for bq25960-standalone factory testing
-   chown system system /sys/class/power_supply/bq25960-standalone/voltage_now
-   chown system system /sys/class/power_supply/bq25960-standalone/charging_enabled
-   chmod 0644 /sys/class/power_supply/bq25960-standalone/voltage_now
-   chmod 0664 /sys/class/power_supply/bq25960-standalone/charging_enabled
-
-#fps dual sensor
-service vendor.ident-fps-overlay-sh /vendor/bin/init.oem.fingerprint.overlay.sh
-    class core
-    user root
-    group drmrpc system
-    oneshot
-    disabled
-
-# Turn on led to indicate device on factory mode
-on property:ro.bootmode=mot-factory
-    write /sys/class/leds/charging/brightness 255
+   # Goodix fingerprint sensor GF3626 reuses the driver "goodix_fod_mmi.ko"
+   insmod /vendor/lib/modules/goodix_fod_mmi.ko
 
 on post-fs-data
+    mkdir /mnt/vendor/persist/tof 0755 vendor_tcmd camera
+    chown vendor_tcmd camera /mnt/vendor/persist/tof/refspad_cal
+    chown vendor_tcmd camera /mnt/vendor/persist/tof/xtalk_g1_cal
+    chown vendor_tcmd camera /mnt/vendor/persist/tof/xtalk_shape_cal
+    chown vendor_tcmd camera /mnt/vendor/persist/tof/xtalk_production_cal
+    chown vendor_tcmd camera /mnt/vendor/persist/tof/offset_cal
+    chmod 0640 /mnt/vendor/persist/tof/refspad_cal
+    chmod 0640 /mnt/vendor/persist/tof/xtalk_g1_cal
+    chmod 0640 /mnt/vendor/persist/tof/xtalk_shape_cal
+    chmod 0640 /mnt/vendor/persist/tof/xtalk_production_cal
+    chmod 0640 /mnt/vendor/persist/tof/offset_cal
+    # Param updater data for various modules
+    mkdir /data/vendor/param 0775 system system
     mkdir /data/vendor/tzstorage/goodix 0770 system system
-    exec_start vendor.ident-fps-overlay-sh
+
+on early-boot
+    # Goodix fingerprint
+    chown system system /dev/goodix_fp
+    chmod 0664 /dev/goodix_fp
+
+on boot
+    # allow TCMD to access cci for OIS test
+    chmod 0660 /dev/cci_intf
+    chown system camera /dev/cci_intf
+
+    #change adsp pmic test command file access permission
+    chown vendor_tcmd system /sys/devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:mmi,qti-glink-charger/tcmd
+    chown vendor_tcmd system /sys/devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:mmi,qti-glink-charger/force_pmic_icl
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:mmi,qti-glink-charger/tcmd
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:mmi,qti-glink-charger/force_pmic_icl
+    # Touch game mode control
+    chown system system /sys/class/touchscreen/primary/rotate
+    chmod 0660 /sys/class/touchscreen/primary/rotate
+    chown system system /sys/class/touchscreen/primary/interpolation
+    chmod 0660 /sys/class/touchscreen/primary/interpolation
+    chown system system /sys/class/touchscreen/primary/edge
+    chmod 0660 /sys/class/touchscreen/primary/edge
+    chown system system /sys/class/touchscreen/primary/first_filter
+    chmod 0660 /sys/class/touchscreen/primary/first_filter
+    chown system system /sys/class/touchscreen/primary/sensitivity
+    chmod 0660 /sys/class/touchscreen/primary/sensitivity
+   # Set adaptive charging perms for HAL
+    chown system system /sys/module/qpnp_adaptive_charge/parameters/upper_limit
+    chown system system /sys/module/qpnp_adaptive_charge/parameters/lower_limit
+    # touch screen calibration file
+    mkdir /mnt/vendor/persist/touch
+    chown vendor_tcmd system /mnt/vendor/persist/touch
+    chmod 0775 /mnt/vendor/persist/touch
+
+service capsense_reset /system/vendor/bin/capsense_reset
+   class core
+   user system
+   group system input
+   disabled
+
+on property:sys.boot_completed=1
+    start capsense_reset
+
+on property:persist.vendor.paramfile.parse_panel=1
+    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dsi_display_parse_para "5"
 

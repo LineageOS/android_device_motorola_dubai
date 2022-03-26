@@ -1,9 +1,7 @@
-#
-# GF3626_Z9 gesture sensor driver
-#
+# Goodix side-type fingerprint sensor
 
-key 618   SYSTEM_NAVIGATION_UP
-key 619   SYSTEM_NAVIGATION_DOWN
-# double tap
-key 622   SYSTEM_NAVIGATION_LEFT
+key 103  SYSTEM_NAVIGATION_UP
+key 108  SYSTEM_NAVIGATION_DOWN
 
+# use SYSTEM_NAVIGATION_LEFT for double-tap gesture
+key 115  SYSTEM_NAVIGATION_LEFT
