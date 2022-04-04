@@ -1,4 +1,0 @@
-# Aliases extracted from modules themselves.
-alias platform:mmi_relay mmi_relay
-alias of:N*T*Cmmi,sys-relay mmi_relay
-alias of:N*T*Cmmi,sys-relayC* mmi_relay
