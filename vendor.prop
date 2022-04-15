@@ -1,3 +1,6 @@
+# Bluetooth
+bluetooth.device.default_name=motorola edge 30
+
 # Camera
 persist.vendor.camera.physical.num=4
 
