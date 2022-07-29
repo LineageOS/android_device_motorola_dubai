@@ -20,7 +20,6 @@ on early-init
    insmod /vendor/lib/modules/cci_intf.ko
    insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
    start vendor.mmi_modules
-   wait_for_prop init.svc.vendor.mmi_modules stopped
 
 on fs
    # Goodix fingerprint sensor GF3626 reuses the driver "goodix_fod_mmi.ko"
