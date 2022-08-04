@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "SystemUIResBerlin",
+    name: "SystemUIResDubai",
     sdk_version: "current",
     vendor: true
 }

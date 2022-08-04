@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "FrameworksResBerlin",
+    name: "FrameworksResDubai",
     sdk_version: "current",
     vendor: true
 }

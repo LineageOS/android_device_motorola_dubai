@@ -7,5 +7,5 @@
 
     <!-- Height of the status bar in landscape. The height should be
          Max((status bar content height + waterfall top size), top cutout size) -->
-    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="status_bar_height">24.0dip</dimen>
 </resources>

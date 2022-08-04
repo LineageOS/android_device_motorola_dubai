@@ -18,22 +18,22 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from berlin device
-$(call inherit-product, device/motorola/berlin/device.mk)
+# Inherit from dubai device
+$(call inherit-product, device/motorola/dubai/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_berlin
-PRODUCT_DEVICE := berlin
+PRODUCT_NAME := lineage_dubai
+PRODUCT_DEVICE := dubai
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := motorola edge 20
+PRODUCT_MODEL := motorola edge 30
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=berlin_retail \
-    PRIVATE_BUILD_DESC="berlin_global-user 11 S1RG32.53-18-11-7 7be15 release-keys"
+    TARGET_PRODUCT=dubai_retail \
+    PRIVATE_BUILD_DESC="dubai_g-user 12 S1RD32M.55-67 356bc release-keys"
 
-BUILD_FINGERPRINT := motorola/berlin_global/berlin:11/S1RGS32.53-18-11-7/7be15:user/release-keys
+BUILD_FINGERPRINT := motorola/dubai_g/dubai:12/S1RD32M.55-67/356bc:user/release-keys

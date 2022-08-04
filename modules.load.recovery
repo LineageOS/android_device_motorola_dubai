@@ -4,4 +4,4 @@ sensors_class.ko
 touchscreen_mmi.ko
 mmi_annotate.ko
 mmi_info.ko
-stmicro_mmi.ko
+goodix_brl_mmi.ko

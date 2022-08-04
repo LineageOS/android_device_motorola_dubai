@@ -1,0 +1,9 @@
+#
+# Goodix Touch sensor fod key event
+#
+#
+# 704 finger touch down
+# 705 finger touch up
+# goodix_ts "finger present"
+key 704   SYSTEM_NAVIGATION_DOWN
+key 705   SYSTEM_NAVIGATION_UP

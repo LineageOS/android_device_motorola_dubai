@@ -99,5 +99,5 @@ blocklist utags
 #
 # Motorola product module block list
 #
-blocklist camera
-blocklist aw8695
+
+

@@ -8,12 +8,18 @@ volume index from 0 to 100.
 </volume>
 -->
 <volumes>
-    <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_HEADSET"
-                                             ref="DEFAULT_VOICE_VOLUME_CURVE"/>
+    <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_HEADSET">
+        <point>0,-3700</point>
+        <point>20,-2600</point>
+        <point>40,-1800</point>
+        <point>60,-1100</point>
+        <point>80,-500</point>
+        <point>100,0</point>
+    </volume>
     <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_SPEAKER">
         <point>0,-3000</point>
-        <point>33,-2300</point>
-        <point>66,-1600</point>
+        <point>33,-2000</point>
+        <point>66,-1000</point>
         <point>100,0</point>
     </volume>
     <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_EARPIECE"
@@ -41,11 +47,11 @@ volume index from 0 to 100.
     <volume stream="AUDIO_STREAM_RING" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
                                        ref="SONIFICATION_CATEGORY_EXT_MEDIA_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_HEADSET">
-        <point>1,-5800</point>
-        <point>34,-3200</point>
-        <point>67,-1600</point>
+        <point>1,-6000</point>
+        <point>33,-3800</point>
+        <point>66,-1800</point>
         <point>100,0</point>
-	</volume>
+    </volume>
     <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_SPEAKER"
                                         ref="DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_EARPIECE"
