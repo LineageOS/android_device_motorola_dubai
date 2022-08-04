@@ -29,6 +29,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 DEVICE_MANIFEST_YUPIK_FILES += $(DEVICE_PATH)/manifest_berlin.xml
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.hab.product=berlin
 TARGET_KERNEL_CONFIG += vendor/lineage_berlin.config
 
 # Kernel Modules
