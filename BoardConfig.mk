@@ -49,7 +49,7 @@ BOARD_MOT_DP_GROUP_SIZE := 7109345280
 BOARD_SUPER_PARTITION_SIZE := 14227079168
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/sys/class/sensors/dt-gesture/enable"
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/platform/soc/a94000.i2c/i2c-2/2-0049/double_click"
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
