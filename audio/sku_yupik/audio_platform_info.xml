@@ -118,7 +118,20 @@
         <gain_level_map db="-10.2" level="2"/>
         <gain_level_map db="0" level="1"/>
     </gain_db_to_level_mapping>
-
+    <crystalk_devices>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_NN" value="true" />
+        <device name="SND_DEVICE_IN_HANDSET_MIC" value="false" />
+        <device name="SND_DEVICE_IN_VOICE_REC_EXTERNAL_MIC_NN" value="true" />
+        <device name="SND_DEVICE_IN_VOICE_REC_EXTERNAL_MIC" value="false" />
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_GAME_NN" value="true" />
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_GAME" value="false" />
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC_NS_NN" value="true" />
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC_NS" value="false" />
+        <device name="SND_DEVICE_IN_HEADSET_MIC_FLUENCE_NN" value="true" />
+        <device name="SND_DEVICE_IN_HEADSET_MIC_FLUENCE" value="false" />
+        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_AEC_NN" value="true" />
+        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_AEC" value="false" />
+    </crystalk_devices>
     <acdb_ids>
 	<!-- Output devices -->
 	<device name="SND_DEVICE_OUT_HANDSET" acdb_id="7" />

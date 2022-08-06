@@ -409,6 +409,9 @@ vendor/lib64/camera/com.qti.tuned.mot_berlin_s5khm2.bin
 # Display calibration data
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667.xml
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_visionox_1080p_dsc_667.xml
+vendor/etc/qdcm_calib_data_nt36672e_60_Hz_fhd_plus_video_mode_panel_without_DSC.xml
+vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_120Hz_Video_panel.xml
+vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_144Hz_video_panel.xml
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.goodix.default.so
@@ -433,6 +436,7 @@ vendor/etc/st21nfc_conf_ss.txt
 
 # NFC firmware
 vendor/firmware/st21nfc_fw.bin
+vendor/firmware/st21nfc_fw7.bin
 
 # OEM
 vendor/etc/vhw.xml
@@ -503,6 +507,7 @@ vendor/etc/sensors/proto/mot_offbody.proto
 vendor/etc/sensors/proto/mot_probe.proto
 vendor/etc/sensors/proto/mot_proxcal.proto
 vendor/etc/sensors/proto/mot_stowed.proto
+vendor/etc/sensors/proto/mot_tap.proto
 vendor/etc/sensors/proto/mot_vsync.proto
 vendor/etc/sensors/proto/nanopb.proto
 vendor/etc/sensors/proto/sns_accel.proto
