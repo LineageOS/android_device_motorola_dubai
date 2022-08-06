@@ -67,6 +67,10 @@ on boot
     chmod 0660 /sys/class/touchscreen/primary/first_filter
     chown system system /sys/class/touchscreen/primary/sensitivity
     chmod 0660 /sys/class/touchscreen/primary/sensitivity
+    chown system system /sys/devices/platform/soc/a94000.i2c/i2c-2/2-0049/double_click
+    chmod 0660 /sys/devices/platform/soc/a94000.i2c/i2c-2/2-0049/double_click
+    chown system system /sys/devices/platform/soc/a94000.i2c/i2c-2/2-0049/single_click
+    chmod 0660 /sys/devices/platform/soc/a94000.i2c/i2c-2/2-0049/single_click
    # Set adaptive charging perms for HAL
     chown system system /sys/module/qpnp_adaptive_charge/parameters/upper_limit
     chown system system /sys/module/qpnp_adaptive_charge/parameters/lower_limit
