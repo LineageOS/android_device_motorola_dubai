@@ -17,7 +17,7 @@
 DEVICE_PATH := device/motorola/berlin
 
 # Inherit from motorola sm7325-common
--include device/motorola/sm7325-common/BoardConfigCommon.mk
+include device/motorola/sm7325-common/BoardConfigCommon.mk
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := berlin
