@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from RRG31.Q3-23-85
+# All unpinned blobs below are extracted from S1RG32.53-18-11-7
 
 # ACDB Data
 vendor/etc/acdbdata/Bluetooth_cal.acdb
