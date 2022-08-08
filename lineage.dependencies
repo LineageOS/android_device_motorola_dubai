@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_device_motorola_sm7325-common",
+    "target_path": "device/motorola/sm7325-common"
+  }
+]
