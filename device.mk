@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# A/B
+TARGET_IS_VAB := true
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
