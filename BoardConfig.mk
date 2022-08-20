@@ -31,6 +31,7 @@ DEVICE_MANIFEST_YUPIK_FILES += $(DEVICE_PATH)/manifest_dubai.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=dubai
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG += vendor/lineage_dubai.config
 
 # Kernel Modules
