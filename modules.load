@@ -95,6 +95,9 @@ bm_adsp_ulog.ko
 mmi_charger.ko
 qti_glink_charger.ko
 qpnp_adaptive_charge.ko
+cirrus_wm_adsp.ko
+cirrus_cs35l41.ko
+cirrus_cs35l45.ko
 aw862x.ko
 mmi_info.ko
 mmi_relay.ko

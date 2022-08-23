@@ -11,6 +11,9 @@ on early-init
    insmod /vendor/lib/modules/mmi_charger.ko
    insmod /vendor/lib/modules/qti_glink_charger.ko
    insmod /vendor/lib/modules/aw882xx_k504.ko
+   insmod /vendor/lib/modules/cirrus_wm_adsp.ko
+   insmod /vendor/lib/modules/cirrus_cs35l41.ko
+   insmod /vendor/lib/modules/cirrus_cs35l45.ko
    insmod /vendor/lib/modules/mmi_sys_temp.ko
    insmod /vendor/lib/modules/wl2864c.ko
    insmod /vendor/lib/modules/goodix_brl_mmi.ko
