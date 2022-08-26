@@ -199,6 +199,13 @@
     -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
+    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
+    <integer-array name="config_udfps_sensor_props" translatable="false" >
+        <item>540</item> <!-- sensorLocationX -->
+        <item>2164</item> <!-- sensorLocationY -->
+        <item>91</item> <!-- sensorRadius -->
+    </integer-array>
+
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
