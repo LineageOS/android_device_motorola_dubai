@@ -440,6 +440,8 @@ vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_120Hz_Video_panel.xml
 vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_144Hz_video_panel.xml
 
 # Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc
 vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
 vendor/lib64/libets_teeclient_v3.so
