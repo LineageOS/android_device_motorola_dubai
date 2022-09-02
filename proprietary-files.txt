@@ -320,6 +320,7 @@ vendor/etc/camera/vidhance_calibration
 
 # Camera - feature2
 vendor/lib/com.qti.feature2.anchorsync.so
+vendor/lib/com.qti.feature2.arcrawpro.so
 vendor/lib/com.qti.feature2.demux.so
 vendor/lib/com.qti.feature2.derivedoffline.so
 vendor/lib/com.qti.feature2.frameselect.so
@@ -347,6 +348,7 @@ vendor/lib/com.qti.feature2.statsregeneration.so
 vendor/lib/com.qti.feature2.stub.so
 vendor/lib/com.qti.feature2.swmf.so
 vendor/lib64/com.qti.feature2.anchorsync.so
+vendor/lib64/com.qti.feature2.arcrawpro.so
 vendor/lib64/com.qti.feature2.demux.so
 vendor/lib64/com.qti.feature2.derivedoffline.so
 vendor/lib64/com.qti.feature2.frameselect.so
