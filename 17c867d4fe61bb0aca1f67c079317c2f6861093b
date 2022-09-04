@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "260f78c7_7691c9e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-09-04T23:55:37Z",
+      "side": 1,
+      "message": "automatic brightness definitely works better and the other entries do look proper as well",
+      "revId": "17c867d4fe61bb0aca1f67c079317c2f6861093b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
