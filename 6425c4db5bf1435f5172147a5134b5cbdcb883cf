@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef3e7562_d1617dd9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-09-19T23:23:21Z",
+      "side": 1,
+      "message": "This works good on dubai. Requires sm7325-common dependency to be merged first though",
+      "revId": "6425c4db5bf1435f5172147a5134b5cbdcb883cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
