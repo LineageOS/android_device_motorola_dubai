@@ -432,9 +432,6 @@ vendor/lib64/camera/com.qti.tuned.mot_dubai_ov32b40.bin
 vendor/lib64/camera/com.qti.tuned.mot_dubai_ov50a.bin
 vendor/lib64/camera/com.qti.tuned.mot_dubai_s5kjn1.bin
 
-# Charger
-vendor/bin/charge_only_mode
-
 # Display calibration data
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_655.xml
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_tm_1080p_dsc_655.xml
