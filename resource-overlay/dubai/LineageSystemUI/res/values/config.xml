@@ -10,6 +10,9 @@
     -->
     <integer name="config_udfpsHbmType">0</integer>
 
+    <!-- Color of the UDFPS pressed view -->
+    <color name="config_udfpsColor">#ffffff</color>
+
     <!-- Doze: does the double tap sensor need a proximity check? -->
     <bool name="doze_double_tap_proximity_check">true</bool>
 </resources>
