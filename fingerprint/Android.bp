@@ -17,6 +17,7 @@ cc_binary {
         "android.hardware.biometrics.fingerprint@2.1",
         "android.hardware.biometrics.fingerprint@2.2",
         "android.hardware.biometrics.fingerprint@2.3",
+        "com.motorola.hardware.biometric.fingerprint@1.0",
     ],
 }
 

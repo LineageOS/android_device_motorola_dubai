@@ -20,6 +20,7 @@
 #include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
+#include <com/motorola/hardware/biometric/fingerprint/1.0/IMotoFingerPrint.h>
 
 namespace android {
 namespace hardware {
@@ -38,6 +39,9 @@ using ::android::hardware::hidl_vec;
 using ::android::hardware::Return;
 using ::android::hardware::Void;
 using ::android::sp;
+using ::com::motorola::hardware::biometric::fingerprint::V1_0::IMotoFingerPrint;
+using ::com::motorola::hardware::biometric::fingerprint::V1_0::IMotFodEventType;
+using ::com::motorola::hardware::biometric::fingerprint::V1_0::IMotFodEventResult;
 
 struct BiometricsFingerprint : public IBiometricsFingerprint {
     BiometricsFingerprint();
@@ -60,6 +64,7 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
 
 private:
     sp<IBiometricsFingerprint_2_1> biometrics_2_1_service;
+    sp<IMotoFingerPrint> mMotoFingerprint;
 };
 
 }  // namespace implementation
