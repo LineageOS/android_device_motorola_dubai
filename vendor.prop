@@ -1,6 +1,7 @@
 # Camera
 persist.vendor.camera.physical.num=4
 vendor.camera.aux.packagelist=com.motorola.camera3
+persist.vendor.camera.privapp.list=com.motorola.camera3
 
 # Motorola
 ro.mot.build.customerid=global
