@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "67454e88_6c71b559",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-10-04T20:46:19Z",
+      "side": 1,
+      "message": "Why? https://review.lineageos.org/c/LineageOS/android_tools_extract-utils/+/332243\n\nIt\u0027s even in envsetup functions",
+      "revId": "ca971befd9294cf809a2a4969d1f1a09aabd12dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
