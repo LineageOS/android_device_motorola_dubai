@@ -16,6 +16,24 @@
       "message": "Why? https://review.lineageos.org/c/LineageOS/android_tools_extract-utils/+/332243\n\nIt\u0027s even in envsetup functions",
       "revId": "ca971befd9294cf809a2a4969d1f1a09aabd12dc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4271eb09_5dd9b56e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-10-04T22:00:04Z",
+      "side": 1,
+      "message": "I guess that Marc missed it. Extra gerrit points for the revert.",
+      "parentUuid": "67454e88_6c71b559",
+      "revId": "ca971befd9294cf809a2a4969d1f1a09aabd12dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
