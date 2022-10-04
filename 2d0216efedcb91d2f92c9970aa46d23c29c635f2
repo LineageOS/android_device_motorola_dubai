@@ -16,6 +16,24 @@
       "message": "\u003e Patch Set 2:\n\u003e \n\u003e no need, Dubai is already on gitlab. you\u0027re welcome to leave it packed if you want.\n\nI thought that was for LOS 20? Or are we able to swap to gitlab for 19.1 branch too?",
       "revId": "2d0216efedcb91d2f92c9970aa46d23c29c635f2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "42004e9f_6a65a5ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-10-04T16:08:05Z",
+      "side": 1,
+      "message": "oh, yeah, you\u0027re right, nah, 19.1 needs split.",
+      "parentUuid": "a39b44cd_c1c2b4a2",
+      "revId": "2d0216efedcb91d2f92c9970aa46d23c29c635f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
