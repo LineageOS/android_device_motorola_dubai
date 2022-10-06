@@ -67,10 +67,6 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/bin/*.sh),\
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/goodix_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix_ts.kl
 
-# Lineage Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.dubai
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
