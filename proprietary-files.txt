@@ -16,7 +16,10 @@ vendor/etc/acdbdata/Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Audio firmware
+vendor/firmware/aw882xx_pid_1852_acf.bin
+vendor/firmware/aw882xx_pid_2113_acf.bin
 vendor/firmware/aw882xx_spk_reg.bin
+
 vendor/firmware/aw_skt.bin
 
 # Audio libraries
@@ -674,6 +677,3 @@ vendor/firmware/aw8622x_rtp_Sparse.bin
 vendor/firmware/aw8622x_rtp_Terrabytes.bin
 vendor/firmware/aw8622x_rtp_Verizon_Airwaves.bin
 vendor/firmware/aw8622x_rtp_Zero_Hour.bin
-vendor/firmware/aw882xx_pid_1852_acf.bin
-vendor/firmware/aw882xx_pid_2113_acf.bin
-vendor/firmware/aw882xx_spk_reg.bin
