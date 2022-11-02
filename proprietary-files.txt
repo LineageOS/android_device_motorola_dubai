@@ -26,6 +26,8 @@ vendor/lib/libacdbloader.so
 vendor/lib64/libacdbloader.so
 
 # Camera
+vendor/etc/cvp/v2.0/facedetection/model1.dat
+vendor/etc/cvp/v2.1/facedetection/model2.dat
 vendor/etc/pwr/PowerFeatureConfig.xml
 vendor/etc/pwr/VideoPowerOptFeature.xml
 vendor/lib/camera/fdconfigpreview.bin
@@ -41,6 +43,12 @@ vendor/lib/com.qti.settings.mannar.so
 vendor/lib/com.qti.settings.sdm865.so
 vendor/lib/com.qti.settings.sm8350.so
 vendor/lib/com.qti.stats.common.so
+vendor/lib/libFace3DTA.so
+vendor/lib/libFace3D_hlos.so
+vendor/lib/libQ6MSFR_manager_stub.so
+vendor/lib/libaidenoiser.so
+vendor/lib/libaidenoiserv2.so
+vendor/lib/libanti_eyeglasses_reflection.arcsoft.so
 vendor/lib/libarcsoft_chi_utils.so
 vendor/lib/libarcsoft_distortion_correction.so
 vendor/lib/libarcsoft_hdr_detection.so
@@ -69,8 +77,15 @@ vendor/lib/libcamxswprocessalgo.so
 vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libchilog.so
 vendor/lib/libcom.qti.chinodeutils.so
+vendor/lib/libcvp2_1.so
+vendor/lib/libcvp_common.so
+vendor/lib/libcvp_util.so
+vendor/lib/libcvpcpuRev_skel.so
+vendor/lib/libface3d_dev.so
 vendor/lib/libipebpsstriping.so
 vendor/lib/libipebpsstriping170.so
+vendor/lib/libjpege.so
+vendor/lib/libmfec.so
 vendor/lib/libmmcamera_bestats.so
 vendor/lib/libmmcamera_cac3.so
 vendor/lib/libmmcamera_faceproc.so
@@ -87,11 +102,15 @@ vendor/lib/libmpbase.so
 vendor/lib/libofflinedump.so
 vendor/lib/libofflinelog.so
 vendor/lib/libopencv.so
+vendor/lib/libopestriping.so
 vendor/lib/libos.so
 vendor/lib/libpowercore.so
+vendor/lib/libqll10.so
+vendor/lib/libqllengine.so
 vendor/lib/libremosaic_wrapper.so
 vendor/lib/libswregistrationalgo.so
 vendor/lib/libsynx.so
+vendor/lib/libtfestriping.so
 vendor/lib/libthreadutils.so
 vendor/lib/libvideooptfeature.so
 vendor/lib/libvideoutils.so
@@ -104,6 +123,7 @@ vendor/lib/libvidhance_horizon_correction.so
 vendor/lib/libvidhance_stabilizer.so
 vendor/lib/libvidhance_zoom_stabilization.so
 vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/lib/vendor.qti.hardware.cvp@1.0.so
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
@@ -121,6 +141,12 @@ vendor/lib64/com.qualcomm.mcx.distortionmapper.so
 vendor/lib64/com.qualcomm.mcx.linearmapper.so
 vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
+vendor/lib64/libFace3DTA.so
+vendor/lib64/libFace3D_hlos.so
+vendor/lib64/libQ6MSFR_manager_stub.so
+vendor/lib64/libaidenoiser.so
+vendor/lib64/libaidenoiserv2.so
+vendor/lib64/libanti_eyeglasses_reflection.arcsoft.so
 vendor/lib64/libarcsoft_chi_utils.so
 vendor/lib64/libarcsoft_distortion_correction.so
 vendor/lib64/libarcsoft_dual_sat.so
@@ -151,10 +177,17 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
+vendor/lib64/libcvp2_1.so
+vendor/lib64/libcvp_common.so
+vendor/lib64/libcvp_util.so
+vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libdualcam_video_optical_zoom.so
+vendor/lib64/libface3d_dev.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libipebpsstriping170.so
+vendor/lib64/libjpege.so
+vendor/lib64/libmfec.so
 vendor/lib64/libmmcamera_bestats.so
 vendor/lib64/libmmcamera_cac3.so
 vendor/lib64/libmmcamera_faceproc.so
@@ -171,11 +204,15 @@ vendor/lib64/libmpbase.so
 vendor/lib64/libofflinedump.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libopencv.so
+vendor/lib64/libopestriping.so
 vendor/lib64/libos.so
 vendor/lib64/libpowercore.so
+vendor/lib64/libqll10.so
+vendor/lib64/libqllengine.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
+vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/libvideooptfeature.so
 vendor/lib64/libvidhance.so
@@ -187,6 +224,7 @@ vendor/lib64/libvidhance_horizon_correction.so
 vendor/lib64/libvidhance_stabilizer.so
 vendor/lib64/libvidhance_zoom_stabilization.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # Camera - Components
 vendor/lib/camera/components/com.mot.node.c2d.so
