@@ -1,10 +1,12 @@
-# All unpinned blobs below are extracted from 12-S1RDS32.55-67-4 f3f840 release-keys.
+# All unpinned blobs below are extracted from 12-S1RD32M.55-94 9be6b release-keys.
 
 # ACDB Data
 vendor/etc/acdbdata/nn_ns_models/candidate__2.7.1.31__3.0.0__eai_1.10_enpu1.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.6.1_0.0__eai_v1.10.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.4_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/General_cal.acdb
@@ -23,6 +25,7 @@ vendor/firmware/aw_skt.bin
 
 # Audio libraries
 vendor/lib/libacdbloader.so
+vendor/lib/libmotaudioutils.so
 vendor/lib64/libacdbloader.so
 
 # Camera
@@ -48,7 +51,6 @@ vendor/lib/libFace3D_hlos.so
 vendor/lib/libQ6MSFR_manager_stub.so
 vendor/lib/libaidenoiser.so
 vendor/lib/libaidenoiserv2.so
-vendor/lib/libanti_eyeglasses_reflection.arcsoft.so
 vendor/lib/libarcsoft_chi_utils.so
 vendor/lib/libarcsoft_distortion_correction.so
 vendor/lib/libarcsoft_hdr_detection.so
@@ -97,6 +99,7 @@ vendor/lib/libmmcamera_pdpc.so
 vendor/lib/libmot_afd.so
 vendor/lib/libmot_chi_desktop_helper.so
 vendor/lib/libmot_engine_settings.so
+vendor/lib/libmotext_inf.so
 vendor/lib/libmotoisdataqueue.so
 vendor/lib/libmpbase.so
 vendor/lib/libofflinedump.so
@@ -146,7 +149,6 @@ vendor/lib64/libFace3D_hlos.so
 vendor/lib64/libQ6MSFR_manager_stub.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
-vendor/lib64/libanti_eyeglasses_reflection.arcsoft.so
 vendor/lib64/libarcsoft_chi_utils.so
 vendor/lib64/libarcsoft_distortion_correction.so
 vendor/lib64/libarcsoft_dual_sat.so
@@ -456,16 +458,6 @@ vendor/lib64/camera/com.qti.sensormodule.mot_dubai_ov32b40_ofilm.bin
 vendor/lib64/camera/com.qti.sensormodule.mot_dubai_ov50a_sunny.bin
 vendor/lib64/camera/com.qti.sensormodule.mot_dubai_s5kjn1_qtech.bin
 
-# Camera - sensormodule
-vendor/lib/camera/com.qti.sensormodule.mot_dubai_gc02m1b_tsp.bin
-vendor/lib/camera/com.qti.sensormodule.mot_dubai_ov32b40_ofilm.bin
-vendor/lib/camera/com.qti.sensormodule.mot_dubai_ov50a_sunny.bin
-vendor/lib/camera/com.qti.sensormodule.mot_dubai_s5kjn1_qtech.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_dubai_gc02m1b_tsp.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_dubai_ov32b40_ofilm.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_dubai_ov50a_sunny.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_dubai_s5kjn1_qtech.bin
-
 # Camera - tuned
 vendor/lib/camera/com.qti.tuned.default.bin
 vendor/lib/camera/com.qti.tuned.mot_dubai_gc02m1b.bin
@@ -496,7 +488,7 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 # MotCamera4
 -product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED
 product/etc/init/init.motcamera3.lens.rc
--product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Aperture|97f1a405b5b6eff61134a0e631c525482109b3f6
+-product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Aperture|2d1f8d845a35951de74c68d5e1923b9325afc1c3
 system_ext/etc/public.libraries-motocamera.txt
 system_ext/framework/com.motorola.androidx.camera.extensions.jar
 system_ext/lib/libmcf_native_window_helper.motocamera.so
