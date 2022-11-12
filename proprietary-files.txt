@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from 12-S1RDS32.55-67-4 f3f840 release-keys.
+# All unpinned blobs below are extracted from 12-S1RD32.55-94 f3f840 release-keys.
 
 # ACDB Data
 vendor/etc/acdbdata/nn_ns_models/candidate__2.7.1.31__3.0.0__eai_1.10_enpu1.pmd
@@ -458,7 +458,7 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 # MotCamera4
 -product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED
 product/etc/init/init.motcamera3.lens.rc
--product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Camera2|97f1a405b5b6eff61134a0e631c525482109b3f6
+-product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Camera2|2d1f8d845a35951de74c68d5e1923b9325afc1c3
 system_ext/etc/public.libraries-motocamera.txt
 system_ext/framework/com.motorola.androidx.camera.extensions.jar
 system_ext/lib/libmcf_native_window_helper.motocamera.so
