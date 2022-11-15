@@ -32,12 +32,6 @@
          config to 7. -->
     <integer name="config_deviceHardwareWakeKeys">64</integer>
 
-    <!-- HBM type of UDFPS overlay.
-            0 - GLOBAL HBM
-            1 - LOCAL HBM
-    -->
-    <integer name="config_udfpsHbmType">0</integer>
-
     <!-- Color of the UDFPS pressed view -->
     <color name="config_udfpsColor">#ffffff</color>
 
