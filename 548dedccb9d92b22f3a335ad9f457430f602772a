@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75c7efcf_bef7906c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-11-19T05:20:20Z",
+      "side": 1,
+      "message": "You need to get the build fingerprint from the system partition as vendor is frozen to Android 11. Plus the fingerprint description wasn\u0027t updated and we should just squash this into the other update blobs commit anyways, no need for it to be a separate commit",
+      "revId": "548dedccb9d92b22f3a335ad9f457430f602772a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
