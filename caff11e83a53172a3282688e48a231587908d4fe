@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab96efbb_255eae88",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18220
+      },
+      "writtenOn": "2022-11-21T17:27:50Z",
+      "side": 1,
+      "message": "Might as well ship camera apk as presigned while at it?",
+      "revId": "caff11e83a53172a3282688e48a231587908d4fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
