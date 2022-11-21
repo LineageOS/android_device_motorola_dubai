@@ -16,6 +16,24 @@
       "message": "Might as well ship camera apk as presigned while at it?",
       "revId": "caff11e83a53172a3282688e48a231587908d4fe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84da8927_e1a4f124",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-11-21T21:23:40Z",
+      "side": 1,
+      "message": "I think we probably should split this commit to match lineage-19.1 for MotCamera4 changes and then do a separate commit with presigned plus include the necessary dependencies since we currently nuke those too\n\nhttps://github.com/moto-sm7325/moto_MotCamera4/commit/af67230fb59da16958820868997d92d557a8a05c",
+      "parentUuid": "ab96efbb_255eae88",
+      "revId": "caff11e83a53172a3282688e48a231587908d4fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
