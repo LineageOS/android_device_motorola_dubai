@@ -55,11 +55,7 @@ vendor/lib/libarcsoft_distortion_correction.so
 vendor/lib/libarcsoft_hdr_detection.so
 vendor/lib/libarcsoft_high_dynamic_range.so
 vendor/lib/libarcsoft_portrait_distortion_correction.so
-vendor/lib/libarcsoft_portrait_super_night_raw.so
-vendor/lib/libarcsoft_portrait_super_night_se_raw.so
 vendor/lib/libarcsoft_qnnhtp.so
-vendor/lib/libarcsoft_super_night_raw.so
-vendor/lib/libarcsoft_super_night_se_raw.so
 vendor/lib/libbitmlengine.so
 vendor/lib/libbitmlenginev2.so
 vendor/lib/libc2d_helper.so
@@ -154,11 +150,7 @@ vendor/lib64/libarcsoft_dual_zoomtranslator.so
 vendor/lib64/libarcsoft_hdr_detection.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
 vendor/lib64/libarcsoft_portrait_distortion_correction.so
-vendor/lib64/libarcsoft_portrait_super_night_raw.so
-vendor/lib64/libarcsoft_portrait_super_night_se_raw.so
 vendor/lib64/libarcsoft_qnnhtp.so
-vendor/lib64/libarcsoft_super_night_raw.so
-vendor/lib64/libarcsoft_super_night_se_raw.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libc2d_helper.so
@@ -285,7 +277,6 @@ vendor/lib/camera/components/com.vidhance.node.ica.so
 vendor/lib/camera/components/com.vidhance.node.processing.so
 vendor/lib/camera/components/com.vidhance.stats.aec_dmbr.so
 vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so
-vendor/lib64/camera/components/com.arcsoft.node.supernightraw.so
 vendor/lib64/camera/components/com.mot.node.c2d.so
 vendor/lib64/camera/components/com.mot.node.dc_capture.so
 vendor/lib64/camera/components/com.mot.node.hdr.so
@@ -434,6 +425,20 @@ vendor/lib/motorola.hardware.camera.desktop@1.0.so
 vendor/lib/motorola.hardware.camera.desktop@2.0.so
 vendor/lib64/motorola.hardware.camera.desktop@1.0.so
 vendor/lib64/motorola.hardware.camera.desktop@2.0.so
+
+# Camera - Super Night - From tundra
+vendor/lib/libarcsoft_portrait_super_night_raw.so|48b96743954e439084f57bd1e8a9124aa876c55a
+vendor/lib/libarcsoft_portrait_super_night_se_raw.so|70b80ecfdf95f54b0bc6f7cc0490d2a27e73d244
+vendor/lib/libarcsoft_super_night_raw.so|ee142220280ebf476c6380bcafa9819ae4ac24ee
+vendor/lib/libarcsoft_super_night_se_raw.so|4d86eb51a3c35cf9b40e0d9c6ecece77f192c2bd
+vendor/lib64/camera/components/com.arcsoft.node.supernightraw.so|dd7d158f4e5e9d9d2932eb01d2f3aee20484fb09
+vendor/lib64/libarcsoft_portrait_super_night_raw.so|cdde78ba26e995a4bcb62f3ef541830e2225e237
+vendor/lib64/libarcsoft_portrait_super_night_se_raw.so|bcf89f2aa2d63e04d0d4856c9d0e3a0012ab4f2b
+vendor/lib64/libarcsoft_portrait_super_night_se_raw_bin.so|78ea72df9b22649c8192fb915741ada4b426aee5
+vendor/lib64/libarcsoft_super_night_raw.so|602c351b1da79c543d73d45ba0e6471739f8e723
+vendor/lib64/libarcsoft_super_night_raw_bin.so|fa2c937d08148437399cfe4c82a6eea1036da289
+vendor/lib64/libarcsoft_super_night_se_raw.so|f90e32316cd7928910670345ca0fad95ae19872f
+vendor/lib64/libarcsoft_super_night_se_raw_bin.so|d3f7315320dc8f5d266bb2f6cb41f32e3cd74e86
 
 # Camera - OIS
 vendor/firmware/mot_dw9781c.prog
