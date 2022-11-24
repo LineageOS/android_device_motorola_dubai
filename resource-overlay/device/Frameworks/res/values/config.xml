@@ -207,6 +207,10 @@
         <item>91</item> <!-- sensorRadius -->
     </integer-array>
 
+    <!-- Whether or not wcg (wide color gamut) should be enabled on this device,
+         we only enabled it while the device has ability of mixed color spaces composition -->
+    <bool name="config_enableWcgMode">true</bool>
+
     <!-- Whether to enable fp unlock when screen turns off on udfps devices -->
     <bool name="config_screen_off_udfps_enabled">true</bool>
 </resources>
