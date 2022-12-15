@@ -19,10 +19,10 @@
     <!-- Bottom margin size when fingerprint in display is active -->
     <dimen name="keyguard_indication_margin_bottom">16.0dip</dimen>
 
-	<!-- Location on the screen of the center of the physical power button. -->
-    <dimen name="physical_power_button_center_screen_location_y">620.0px</dimen>
+    <!-- Location on the screen of the center of the physical power button. -->
+    <dimen name="physical_power_button_center_screen_location_y">1000.0px</dimen>
 
     <!-- Location on the screen of the center of the physical volume up/down buttons. -->
-    <dimen name="physical_volume_up_button_center_screen_location_y">950.0px</dimen>
-    <dimen name="physical_volume_down_button_center_screen_location_y">1150.0px</dimen>
+    <dimen name="physical_volume_up_button_center_screen_location_y">600.0px</dimen>
+    <dimen name="physical_volume_down_button_center_screen_location_y">760.0px</dimen>
 </resources>
