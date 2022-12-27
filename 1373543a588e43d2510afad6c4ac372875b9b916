@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1da7eb70_707e468d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-12-27T15:52:45Z",
+      "side": 1,
+      "message": "WIP, front facing camera night vision isn\u0027t working",
+      "revId": "1373543a588e43d2510afad6c4ac372875b9b916",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
