@@ -25,8 +25,8 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">500</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">500</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">5000</integer>
 
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
@@ -54,9 +54,6 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>2</item>
-        <item>4</item>
-        <item>5</item>
         <item>10</item>
         <item>40</item>
         <item>100</item>
@@ -78,19 +75,16 @@
          This array should have size one greater than the size of the config_autoBrightnessLevels
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
-    <array name="config_autoBrightnessDisplayValuesNits">
-        <item>2</item>
-        <item>7</item>
-        <item>10</item>
-        <item>12</item>
+    <integer-array name="config_autoBrightnessDisplayValuesNits">
         <item>24</item>
         <item>95</item>
         <item>111</item>
         <item>149</item>
         <item>192</item>
         <item>252</item>
+        <item>376</item>
         <item>500</item>
-    </array>
+    </integer-array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
@@ -109,7 +103,7 @@
         <item>98</item>
         <item>129</item>
         <item>255</item>
-    </integer-array>
+    </array>
 
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
          values in the config_screenBrightnessBacklight array.  On OLED displays these  values
