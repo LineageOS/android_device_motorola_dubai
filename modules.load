@@ -75,12 +75,7 @@ swr_dmic_dlkm.ko
 r820t.ko
 camera.ko
 tx_macro_dlkm.ko
-qca_cld3_wlan.ko
-qca_cld3_qca6750.ko
-qca_cld3_qca6390.ko
-qca_cld3_wlan.ko
-qca_cld3_qca6750.ko
-qca_cld3_qca6390.ko
+wlan.ko
 rmnet_core.ko
 rmnet_ctl.ko
 rmnet_offload.ko
