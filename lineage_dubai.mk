@@ -34,6 +34,14 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=dubai_g \
+<<<<<<< HEAD   (1589e3 dubai: Update to S1RD32M.55-94)
     PRIVATE_BUILD_DESC="dubai_g-user 12 S1RD32M.55-94 9be6b release-keys"
+=======
+    PRIVATE_BUILD_DESC="dubai_g-user 12 S1RD32.55-94-2 25a783 release-keys"
+>>>>>>> CHANGE (3baa56 fixup! dubai: Update from S1RDS32M.55-94-2)
 
+<<<<<<< HEAD   (1589e3 dubai: Update to S1RD32M.55-94)
 BUILD_FINGERPRINT := motorola/dubai_g/dubai:12/S1RD32M.55-94/9be6b:user/release-keys
+=======
+BUILD_FINGERPRINT := motorola/dubai_g/dubai:12/S1RDS32.55-94-2/25a783:user/release-keys
+>>>>>>> CHANGE (3baa56 fixup! dubai: Update from S1RDS32M.55-94-2)
