@@ -108,4 +108,3 @@ mmi_sys_temp.ko
 rbs_fps_mmi.ko
 mmi_info.ko
 mmi_annotate.ko
-watchdog_cpu_ctx.ko
