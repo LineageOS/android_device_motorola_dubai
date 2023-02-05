@@ -4,5 +4,8 @@ persist.vendor.audio.speaker.stereo=true
 # Camera
 persist.vendor.camera.physical.num=4
 
+# Fingerprint
+persist.vendor.fingerprint.udfps.handler=moto
+
 # NFC
 persist.vendor.nfc.st.multisim_fw_config=true

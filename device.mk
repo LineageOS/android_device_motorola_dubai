@@ -47,7 +47,9 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.moto
+    android.hardware.biometrics.fingerprint@2.3-service.moto \
+    libudfpshandler_moto \
+    libudfpshandler_moto_egistec
 
 $(call soong_config_set,surfaceflinger,udfps_lib,//hardware/motorola:libudfps_extension.moto)
 
