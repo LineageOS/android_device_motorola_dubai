@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from dubai_g-user 12 S1RD32M.55-94-2 25a783 release-keys.
+# All unpinned blobs below are extracted from dubai_g-user 12 S1RD32.55-106 0cdff5-e7305 release-keys.
 
 # ACDB Data
 vendor/etc/acdbdata/nn_ns_models/candidate__2.7.1.31__3.0.0__eai_1.10_enpu1.pmd
@@ -76,10 +76,6 @@ vendor/lib/libcamxswprocessalgo.so
 vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libchilog.so
 vendor/lib/libcom.qti.chinodeutils.so
-vendor/lib/libcvp2_1.so
-vendor/lib/libcvp_common.so
-vendor/lib/libcvp_util.so
-vendor/lib/libcvpcpuRev_skel.so
 vendor/lib/libface3d_dev.so
 vendor/lib/libipebpsstriping.so
 vendor/lib/libipebpsstriping170.so
@@ -122,7 +118,6 @@ vendor/lib/libvidhance_horizon_correction.so
 vendor/lib/libvidhance_stabilizer.so
 vendor/lib/libvidhance_zoom_stabilization.so
 vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib/vendor.qti.hardware.cvp@1.0.so
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
@@ -175,10 +170,6 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libcvp2_1.so
-vendor/lib64/libcvp_common.so
-vendor/lib64/libcvp_util.so
-vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libdualcam_video_optical_zoom.so
 vendor/lib64/libface3d_dev.so
@@ -222,7 +213,6 @@ vendor/lib64/libvidhance_horizon_correction.so
 vendor/lib64/libvidhance_stabilizer.so
 vendor/lib64/libvidhance_zoom_stabilization.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # Camera - Components
 vendor/lib/camera/components/com.mot.node.c2d.so
