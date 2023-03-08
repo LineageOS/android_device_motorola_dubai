@@ -474,7 +474,7 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 # MotCamera4
 -product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED
 product/etc/init/init.motcamera3.lens.rc
--product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Aperture|f33ba5f0f8542fd6693cb2c7ed4faaf1449795fe
+-product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Aperture|8bddc6ce07554ca3f04edb92a16378925a9f72f2
 system_ext/etc/public.libraries-motocamera.txt
 system_ext/framework/com.motorola.androidx.camera.extensions.jar
 system_ext/lib/libmcf_native_window_helper.motocamera.so
