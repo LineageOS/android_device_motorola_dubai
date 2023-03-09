@@ -80,10 +80,29 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
     libchrome.vendor \
-    NfcNci \
-    SecureElement \
     Tag \
     nfc_nci.st21nfc.default
+
+PRODUCT_COPY_FILES += \
+    device/essential/mata/configs/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    device/essential/mata/configs/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+
+# OMX
+PRODUCT_PACKAGES += \
+    libc2dcolorconvert \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw
+
+# Perf
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
+>>>>>>> 0e21a340 (mata: Remove unneeded NFC package)
 
 # Permissions
 PRODUCT_COPY_FILES += \
