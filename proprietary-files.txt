@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from dubai_g-user 12 S1RD32.55-106 0cdff5-e7305 release-keys.
+# All unpinned blobs below are extracted from dubai_g-user 12 S1RD32.55-106-3 98ea12-d3640 release-keys.
 
 # ACDB Data
 vendor/etc/acdbdata/nn_ns_models/candidate__2.7.1.31__3.0.0__eai_1.10_enpu1.pmd
