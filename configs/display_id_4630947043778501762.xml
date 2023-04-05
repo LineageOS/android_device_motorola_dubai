@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<displayConfiguration>
+    <highBrightnessMode enabled="true">
+        <transitionPoint>0.85811965</transitionPoint> <!-- 3514/4095 -->
+        <minimumLux>6500</minimumLux>
+        <timing>
+            <timeWindowSecs>0</timeWindowSecs>
+            <timeMaxSecs>0</timeMaxSecs>
+            <timeMinSecs>0</timeMinSecs>
+        </timing>
+        <thermalStatusLimit>moderate</thermalStatusLimit>
+        <allowInLowPowerMode>false</allowInLowPowerMode>
+    </highBrightnessMode>
+</displayConfiguration>
