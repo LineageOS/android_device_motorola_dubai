@@ -35,6 +35,7 @@
         <item>1250</item>
         <item>3500</item>
         <item>5500</item>
+        <item>10000</item>
     </array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -62,6 +63,7 @@
         <item>192</item>
         <item>252</item>
         <item>500</item>
+        <item>700</item>
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
@@ -71,15 +73,16 @@
     <array name="config_screenBrightnessBacklight">
         <item>0</item>
         <item>1</item>
+        <item>3</item>
         <item>4</item>
         <item>5</item>
-        <item>6</item>
-        <item>12</item>
+        <item>10</item>
+        <item>41</item>
         <item>48</item>
-        <item>57</item>
-        <item>76</item>
-        <item>98</item>
-        <item>129</item>
+        <item>65</item>
+        <item>84</item>
+        <item>110</item>
+        <item>218</item>
         <item>255</item>
     </array>
 
@@ -103,6 +106,7 @@
         <item>192</item>
         <item>252</item>
         <item>500</item>
+        <item>700</item>
     </array>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
@@ -137,12 +141,12 @@
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
         M -35,0
         L 35,0
-		L 35,105
-		L -35,105
-		Z
-	</string>
+        L 35,105
+        L -35,105
+        Z
+    </string>
 
-	<!-- Indicate whether to allow the device to suspend when the screen is off
+    <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
          if the sensor HAL correctly handles the proximity sensor as a wake-up source.
          Otherwise, the device may fail to wake out of suspend reliably.
