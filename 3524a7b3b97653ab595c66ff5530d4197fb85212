@@ -16,6 +16,23 @@
       "message": "dnm wip",
       "revId": "3524a7b3b97653ab595c66ff5530d4197fb85212",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c957aa1_94ca9e1c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15964
+      },
+      "writtenOn": "2023-04-29T09:11:28Z",
+      "side": 1,
+      "message": "This is not needed, we have HBM mode which uses the sysfs entry to set the mode. Internally, the kernel manages additional settings which seems to me is more appropriate than doing this way.",
+      "revId": "3524a7b3b97653ab595c66ff5530d4197fb85212",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
