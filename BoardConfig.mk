@@ -28,7 +28,7 @@ SOONG_CONFIG_qtidisplay_udfps := true
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/device_framework_matrix_dubai.xml
-DEVICE_MANIFEST_YUPIK_FILES += $(DEVICE_PATH)/manifest_dubai.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_dubai.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=dubai
