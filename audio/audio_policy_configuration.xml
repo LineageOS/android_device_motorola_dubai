@@ -90,10 +90,10 @@
                 <mixPort name="primary input" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000"
-                             channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_IN_FRONT_BACK,AUDIO_CHANNEL_IN_AMBISONIC,AUDIO_CHANNEL_INDEX_MASK_3,AUDIO_CHANNEL_INDEX_MASK_4"/>
+                             channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_IN_FRONT_BACK"/>
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
                              samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000"
-                             channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_IN_FRONT_BACK,AUDIO_CHANNEL_IN_AMBISONIC,AUDIO_CHANNEL_INDEX_MASK_3,AUDIO_CHANNEL_INDEX_MASK_4"/>
+                             channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_IN_FRONT_BACK"/>
                 </mixPort>
                 <mixPort name="scc input" role="sink" flags="AUDIO_INPUT_FLAG_HW_HOTWORD">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
