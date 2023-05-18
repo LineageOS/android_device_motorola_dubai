@@ -411,7 +411,6 @@ vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
 
 # Camera - ICP
-vendor/firmware/CAMERA_ICP.elf
 vendor/firmware/CAMERA_ICP_170.elf
 
 # Camera - Motorola
@@ -678,54 +677,3 @@ vendor/firmware/tianma_goodix_test_limits_255.csv
 vendor/firmware/aw8622x_haptic.bin
 vendor/firmware/aw8622x_osc_rtp_12K_10s.bin
 vendor/firmware/aw8622x_rtp.bin
-vendor/firmware/aw8622x_rtp_Argo_Navis.bin
-vendor/firmware/aw8622x_rtp_Attentive.bin
-vendor/firmware/aw8622x_rtp_Awake.bin
-vendor/firmware/aw8622x_rtp_Bird_Loop.bin
-vendor/firmware/aw8622x_rtp_Brilliant_Times.bin
-vendor/firmware/aw8622x_rtp_Chimey_Phone.bin
-vendor/firmware/aw8622x_rtp_City_Lights.bin
-vendor/firmware/aw8622x_rtp_Complex.bin
-vendor/firmware/aw8622x_rtp_Crazy_Dream.bin
-vendor/firmware/aw8622x_rtp_Curve_Ball_Blend.bin
-vendor/firmware/aw8622x_rtp_Digital_Phone.bin
-vendor/firmware/aw8622x_rtp_Electrovision.bin
-vendor/firmware/aw8622x_rtp_Ether_Shake.bin
-vendor/firmware/aw8622x_rtp_Fateful_Words.bin
-vendor/firmware/aw8622x_rtp_Firefly.bin
-vendor/firmware/aw8622x_rtp_Flutey_Phone.bin
-vendor/firmware/aw8622x_rtp_Future_Funk.bin
-vendor/firmware/aw8622x_rtp_Future_Hi_Tech.bin
-vendor/firmware/aw8622x_rtp_Girtab.bin
-vendor/firmware/aw8622x_rtp_Hello.bin
-vendor/firmware/aw8622x_rtp_Hexagon.bin
-vendor/firmware/aw8622x_rtp_Hydra.bin
-vendor/firmware/aw8622x_rtp_Insert_Coin.bin
-vendor/firmware/aw8622x_rtp_Jumping_Dots.bin
-vendor/firmware/aw8622x_rtp_Keys.bin
-vendor/firmware/aw8622x_rtp_Loopy.bin
-vendor/firmware/aw8622x_rtp_Loopy_Lounge.bin
-vendor/firmware/aw8622x_rtp_Modular.bin
-vendor/firmware/aw8622x_rtp_Momentum.bin
-vendor/firmware/aw8622x_rtp_Morning.bin
-vendor/firmware/aw8622x_rtp_Moto.bin
-vendor/firmware/aw8622x_rtp_Moto_Original.bin
-vendor/firmware/aw8622x_rtp_Moto_Retro.bin
-vendor/firmware/aw8622x_rtp_Natural.bin
-vendor/firmware/aw8622x_rtp_New_Player.bin
-vendor/firmware/aw8622x_rtp_Now_or_Never.bin
-vendor/firmware/aw8622x_rtp_Onward.bin
-vendor/firmware/aw8622x_rtp_Organ_Dub.bin
-vendor/firmware/aw8622x_rtp_Overclocked.bin
-vendor/firmware/aw8622x_rtp_Pegasus.bin
-vendor/firmware/aw8622x_rtp_Play.bin
-vendor/firmware/aw8622x_rtp_Pyxis.bin
-vendor/firmware/aw8622x_rtp_Regrade.bin
-vendor/firmware/aw8622x_rtp_Scarabaeus.bin
-vendor/firmware/aw8622x_rtp_Sceptrum.bin
-vendor/firmware/aw8622x_rtp_Simple.bin
-vendor/firmware/aw8622x_rtp_Solarium.bin
-vendor/firmware/aw8622x_rtp_Sparse.bin
-vendor/firmware/aw8622x_rtp_Terrabytes.bin
-vendor/firmware/aw8622x_rtp_Verizon_Airwaves.bin
-vendor/firmware/aw8622x_rtp_Zero_Hour.bin
