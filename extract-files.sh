@@ -18,4 +18,12 @@ export DEVICE=dubai
 export DEVICE_COMMON=sm7325-common
 export VENDOR=motorola
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib/libmot_chi_desktop_helper.so)
+            grep -q "libgui_shim.so" "${2}" || ${PATCHELF} --add-needed "libgui_shim.so" "${2}"
+            ;;
+    esac
+}
+
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
