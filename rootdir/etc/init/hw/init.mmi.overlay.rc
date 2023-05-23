@@ -105,3 +105,6 @@ on property:sys.boot_completed=1
 
 on property:persist.vendor.paramfile.parse_panel=1
     write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dsi_display_parse_para "5"
+
+on property:ro.boot.revision=*
+    setprop ro.boot.hardware.revision ${ro.boot.revision}
