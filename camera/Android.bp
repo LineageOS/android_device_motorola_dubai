@@ -1,0 +1,22 @@
+//
+// Copyright (C) 2023 ArrowOS
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "DubaiCameraService",
+    srcs: ["src/**/*.java"],
+    certificate: "platform",
+    platform_apis: true,
+    privileged: true,
+    system_ext_specific: true,
+    required: ["privapp-permissions-dubaicameraservice.xml"],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-dubaicameraservice.xml",
+    src: "privapp-permissions-dubaicameraservice.xml",
+    system_ext_specific: true,
+    sub_dir: "permissions",
+}
