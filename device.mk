@@ -55,6 +55,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    DubaiCameraService \
     libgui_shim_vendor
 
 # Fingerprint
