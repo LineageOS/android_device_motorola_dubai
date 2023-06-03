@@ -414,6 +414,7 @@ vendor/lib64/com.qti.feature2.swmf.so
 vendor/firmware/CAMERA_ICP_170.elf
 
 # Camera - Motorola
+product/etc/permissions/com.motorola.camera3.dubai.xml:vendor/etc/permissions/com.motorola.camera3.dubai.xml
 vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
 vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc
 vendor/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc
