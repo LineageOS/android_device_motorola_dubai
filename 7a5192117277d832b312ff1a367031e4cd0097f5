@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c7f02235_431c43fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18990
+      },
+      "writtenOn": "2023-06-06T06:11:43Z",
+      "side": 1,
+      "message": "My bad, this actually better belongs in sm7325-common (or even hw/moto for that matter but we do not have an init script there)",
+      "revId": "7a5192117277d832b312ff1a367031e4cd0097f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
