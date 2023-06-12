@@ -52,6 +52,7 @@ module = ExtractUtilsModule(
     namespace_imports=namespace_imports,
     extract_fns=extract_fns,
     add_firmware_proprietary_file=True,
+    add_generated_carriersettings=True,
 )
 
 if __name__ == '__main__':
