@@ -7,8 +7,6 @@
 package com.arrow.dubaicameraservice;
 
 import static android.telephony.SubscriptionManager.INVALID_SUBSCRIPTION_ID;
-import static android.telephony.TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_CARRIER;
-import static android.telephony.TelephonyManager.NETWORK_TYPE_BITMASK_NR;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;
@@ -25,6 +23,7 @@ import android.telephony.TelephonyCallback;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
+import java.util.Arrays;
 import java.util.concurrent.Executor;
 
 public class DubaiCameraService extends Service {
@@ -33,13 +32,16 @@ public class DubaiCameraService extends Service {
     private static final String TAG = "DubaiCameraService";
 
     private static final String FRONT_CAMERA_ID = "1";
+    private static final int OFFENDING_NR_SA_BAND = 78;
 
     private CameraManager mCameraManager;
     private SubscriptionManager mSubManager;
     private TelephonyManager mTelephonyManager;
+    private QcRilMsgUtils mQcRilMsgUtils;
 
     private boolean mIsFrontCamInUse = false;
-    private int mSubId = INVALID_SUBSCRIPTION_ID;
+    private int[] mActiveSubIds = new int[0];
+    private int mDefaultDataSubId = INVALID_SUBSCRIPTION_ID;
 
     private final Handler mHandler = new Handler(Looper.getMainLooper());
     private final Executor mExecutor = new HandlerExecutor(mHandler);
@@ -70,7 +72,13 @@ public class DubaiCameraService extends Service {
         @Override
         public void onSubscriptionsChanged() {
             dlog("onSubscriptionsChanged");
-            update5gState();
+            final int[] subs = mSubManager.getActiveSubscriptionIdList();
+            if (!Arrays.equals(subs, mActiveSubIds)) {
+                dlog("active subs changed, was: " + Arrays.toString(mActiveSubIds)
+                        + ", now: " + Arrays.toString(subs));
+                mActiveSubIds = subs;
+                update5gState();
+            }
         }
     };
 
@@ -79,8 +87,10 @@ public class DubaiCameraService extends Service {
         @Override
         public void onActiveDataSubscriptionIdChanged(int subId) {
             dlog("onActiveDataSubscriptionIdChanged subId:" + subId);
-            mSubId = subId;
-            update5gState();
+            if (subId != mDefaultDataSubId) {
+                mDefaultDataSubId = subId;
+                update5gState();
+            }
         }
     };
 
@@ -89,24 +99,26 @@ public class DubaiCameraService extends Service {
     @Override
     public void onCreate() {
         dlog("onCreate");
+        mQcRilMsgUtils = new QcRilMsgUtils(this);
         mCameraManager = getSystemService(CameraManager.class);
         mSubManager = getSystemService(SubscriptionManager.class);
         mTelephonyManager = getSystemService(TelephonyManager.class);
-
-        mCameraManager.registerAvailabilityCallback(mCameraCallback, mHandler);
-        mTelephonyManager.registerTelephonyCallback(mExecutor, mTelephonyCallback);
-        mSubManager.addOnSubscriptionsChangedListener(mExecutor, mSubListener);
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         dlog("onStartCommand");
+        mQcRilMsgUtils.bindService();
+        mCameraManager.registerAvailabilityCallback(mCameraCallback, mHandler);
+        mTelephonyManager.registerTelephonyCallback(mExecutor, mTelephonyCallback);
+        mSubManager.addOnSubscriptionsChangedListener(mExecutor, mSubListener);
         return START_STICKY;
     }
 
     @Override
     public void onDestroy() {
         dlog("onDestroy");
+        mQcRilMsgUtils.unbindService();
         mCameraManager.unregisterAvailabilityCallback(mCameraCallback);
         mTelephonyManager.unregisterTelephonyCallback(mTelephonyCallback);
         mSubManager.removeOnSubscriptionsChangedListener(mSubListener);
@@ -124,30 +136,22 @@ public class DubaiCameraService extends Service {
     }
 
     private void update5gState() {
-        if (mSubId == INVALID_SUBSCRIPTION_ID
-                || mSubManager.getActiveSubscriptionIdList().length <= 0) {
+        if (mDefaultDataSubId == INVALID_SUBSCRIPTION_ID
+                || mActiveSubIds.length == 0) {
             dlog("update5gState: Invalid subid or no active subs!");
             return;
         }
-        final TelephonyManager tm = mTelephonyManager.createForSubscriptionId(mSubId);
-        // Arguably we should use ALLOWED_NETWORK_TYPES_REASON_POWER here but that's already
-        // used by battery saver, and we are out of other reasons
-        long allowedNetworkTypes = tm.getAllowedNetworkTypesForReason(
-                ALLOWED_NETWORK_TYPES_REASON_CARRIER);
-        final boolean is5gAllowed = (allowedNetworkTypes & NETWORK_TYPE_BITMASK_NR) != 0;
-        dlog("update5gState mIsFrontCamInUse:" + mIsFrontCamInUse + " is5gAllowed:" + is5gAllowed);
-        if (mIsFrontCamInUse && is5gAllowed) {
-            allowedNetworkTypes &= ~NETWORK_TYPE_BITMASK_NR;
-        } else if (!mIsFrontCamInUse && !is5gAllowed) {
-            allowedNetworkTypes |= NETWORK_TYPE_BITMASK_NR;
+        if (mQcRilMsgUtils.setNrSaBandEnabled(mSubManager.getPhoneId(mDefaultDataSubId),
+                OFFENDING_NR_SA_BAND, !mIsFrontCamInUse)) {
+            Log.i(TAG, (mIsFrontCamInUse ? "Disabled" : "Enabled") + " NR SA band "
+                    + OFFENDING_NR_SA_BAND + " for subId " + mDefaultDataSubId);
         } else {
-            return;
+            Log.e(TAG, "Failed to " + (mIsFrontCamInUse ? "disable" : "enable") + " NR SA band "
+                    + OFFENDING_NR_SA_BAND + " for subId " + mDefaultDataSubId);
         }
-        tm.setAllowedNetworkTypesForReason(ALLOWED_NETWORK_TYPES_REASON_CARRIER,
-                allowedNetworkTypes);
     }
 
-    private static void dlog(String msg) {
+    protected static void dlog(String msg) {
         if (DEBUG) Log.d(TAG, msg);
     }
 }
