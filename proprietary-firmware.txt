@@ -1,0 +1,21 @@
+# All firmware images below are extracted from devon_g T2SN33.73-22-3
+
+abl.elf:abl.img;AB
+aop.mbn:aop.img;AB
+BTFM.bin:bluetooth.img;AB
+cpucp.elf:cpucp.img;AB
+devcfg.mbn:devcfg.img;AB
+dspso.bin:dsp.img;AB
+fsg.mbn:fsg.img;AB
+hyp.mbn:hyp.img;AB
+keymaster.mbn:keymaster.img;AB
+logo.bin:logo.img;AB
+NON-HLOS.bin:modem.img;AB
+prov64.mbn:prov.img;AB
+qupfw.elf:qupfw.img;AB
+shrm.elf:shrm.img;AB
+storsec.mbn:storsec.img;AB
+tz.mbn:tz.img;AB
+uefi_sec.mbn:uefisecapp.img;AB
+xbl.elf:xbl.img;AB
+xbl_config.elf:xbl_config.img;AB
