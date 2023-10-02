@@ -24,6 +24,7 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import java.util.Arrays;
+import java.util.Set;
 import java.util.concurrent.Executor;
 
 public class DubaiCameraService extends Service {
@@ -33,6 +34,11 @@ public class DubaiCameraService extends Service {
 
     private static final String FRONT_CAMERA_ID = "1";
     private static final int OFFENDING_NR_BAND = 78;
+
+    private static final Set<String> IGNORED_PACKAGES = Set.of(
+        "co.aospa.sense", // face unlock
+        "com.google.android.as" // auto rotate, screen attention etc
+    );
 
     private CameraManager mCameraManager;
     private SubscriptionManager mSubManager;
@@ -49,19 +55,19 @@ public class DubaiCameraService extends Service {
     private final CameraManager.AvailabilityCallback mCameraCallback =
             new CameraManager.AvailabilityCallback() {
         @Override
-        public void onCameraAvailable(String cameraId) {
-            dlog("onCameraAvailable id:" + cameraId);
-            if (cameraId.equals(FRONT_CAMERA_ID)) {
-                mIsFrontCamInUse = false;
+        public void onCameraOpened(String cameraId, String packageId) {
+            dlog("onCameraOpened id=" + cameraId + " package=" + packageId);
+            if (cameraId.equals(FRONT_CAMERA_ID) && !IGNORED_PACKAGES.contains(packageId)) {
+                mIsFrontCamInUse = true;
                 update5gState();
             }
         }
 
         @Override
-        public void onCameraUnavailable(String cameraId) {
-            dlog("onCameraUnavailable id:" + cameraId);
-            if (cameraId.equals(FRONT_CAMERA_ID)) {
-                mIsFrontCamInUse = true;
+        public void onCameraClosed(String cameraId) {
+            dlog("onCameraClosed id=" + cameraId);
+            if (cameraId.equals(FRONT_CAMERA_ID) && mIsFrontCamInUse) {
+                mIsFrontCamInUse = false;
                 update5gState();
             }
         }
