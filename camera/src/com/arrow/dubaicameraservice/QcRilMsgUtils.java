@@ -56,7 +56,7 @@ public class QcRilMsgUtils {
     }
 
     /* TODO: split this function */
-    protected boolean setNrSaBandEnabled(int phoneId, int band, boolean enabled) {
+    protected boolean setNrBandEnabled(int phoneId, int band, boolean enabled) {
         if (mService == null) {
             Log.e(TAG, "setNrSaBandEnabled: mService is null!");
             return false;
@@ -91,7 +91,7 @@ public class QcRilMsgUtils {
         }
         long[] nrNsaConfigs = new long[NR_CONFIG_LENGTH];
         for (int i = 0; i < NR_CONFIG_LENGTH; i++) {
-            nrSaConfigs[i] = buf.getLong();
+            nrNsaConfigs[i] = buf.getLong();
         }
 
         // modify band config
@@ -99,8 +99,10 @@ public class QcRilMsgUtils {
         int col = (band - 1) % 64;
         if (enabled) {
             nrSaConfigs[row] |= (1 << col);
+            nrNsaConfigs[row] |= (1 << col);
         } else {
             nrSaConfigs[row] &= ~(1 << col);
+            nrNsaConfigs[row] &= ~(1 << col);
         }
 
         // set band config

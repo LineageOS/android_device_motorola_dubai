@@ -32,7 +32,7 @@ public class DubaiCameraService extends Service {
     private static final String TAG = "DubaiCameraService";
 
     private static final String FRONT_CAMERA_ID = "1";
-    private static final int OFFENDING_NR_SA_BAND = 78;
+    private static final int OFFENDING_NR_BAND = 78;
 
     private CameraManager mCameraManager;
     private SubscriptionManager mSubManager;
@@ -141,13 +141,13 @@ public class DubaiCameraService extends Service {
             dlog("update5gState: Invalid subid or no active subs!");
             return;
         }
-        if (mQcRilMsgUtils.setNrSaBandEnabled(mSubManager.getPhoneId(mDefaultDataSubId),
-                OFFENDING_NR_SA_BAND, !mIsFrontCamInUse)) {
-            Log.i(TAG, (mIsFrontCamInUse ? "Disabled" : "Enabled") + " NR SA band "
-                    + OFFENDING_NR_SA_BAND + " for subId " + mDefaultDataSubId);
+        if (mQcRilMsgUtils.setNrBandEnabled(mSubManager.getPhoneId(mDefaultDataSubId),
+                OFFENDING_NR_BAND, !mIsFrontCamInUse)) {
+            Log.i(TAG, (mIsFrontCamInUse ? "Disabled" : "Enabled") + " NR band "
+                    + OFFENDING_NR_BAND + " for subId " + mDefaultDataSubId);
         } else {
-            Log.e(TAG, "Failed to " + (mIsFrontCamInUse ? "disable" : "enable") + " NR SA band "
-                    + OFFENDING_NR_SA_BAND + " for subId " + mDefaultDataSubId);
+            Log.e(TAG, "Failed to " + (mIsFrontCamInUse ? "disable" : "enable") + " NR band "
+                    + OFFENDING_NR_BAND + " for subId " + mDefaultDataSubId);
         }
     }
 
