@@ -509,7 +509,6 @@ vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto
 vendor/etc/sensors/sns_reg_config
 
 # Thermal engine - configs
-vendor/etc/thermal-engine-dubai.conf
 vendor/etc/thermal-engine.conf
 
 # Touchscreen firmware
