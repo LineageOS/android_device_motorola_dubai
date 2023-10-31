@@ -1,13 +1,6 @@
 # All unpinned blobs below are extracted from dubai_g-user 13 T1RD33.116-33-12 d501e0 7757c release-keys - RETAIL variant.
 
 # ACDB Data
-vendor/etc/acdbdata/nn_ns_models/candidate__2.7.1.31__3.0.0__eai_1.10_enpu1.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.6.1_0.0__eai_v1.10.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.4_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd
-vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/General_cal.acdb
 vendor/etc/acdbdata/Global_cal.acdb
@@ -16,6 +9,13 @@ vendor/etc/acdbdata/Hdmi_cal.acdb
 vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/acdbdata/nn_ns_models/candidate__2.7.1.31__3.0.0__eai_1.10_enpu1.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.1_0.0__eai_v1.10.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.4_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd
+vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 
 # Audio firmware
 vendor/firmware/aw882xx_pid_1852_acf.bin
@@ -33,8 +33,6 @@ vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
-vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/com.qti.chiusecaseselector.so
 vendor/lib64/com.qti.settings.kamorta.so
 vendor/lib64/com.qti.settings.kodiak.so
@@ -46,6 +44,8 @@ vendor/lib64/com.qualcomm.mcx.distortionmapper.so
 vendor/lib64/com.qualcomm.mcx.linearmapper.so
 vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
+vendor/lib64/hw/camera.qcom.so
+vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libFace3DTA.so
 vendor/lib64/libFace3D_hlos.so
 vendor/lib64/libQ6MSFR_manager_stub.so
@@ -293,6 +293,13 @@ product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Aperture|9e15a32684556d452e
 
 # MotCamera4 - Libs
 product/lib64/libAncHumanSegFigureFusion-jni.so|29b3f53abf695f59093fa789cffaf79771b49568
+product/lib64/libFNVfbEngineHAL_legacy.so|228508501f39e855c89df1463f4a44e2cb085540
+product/lib64/libNvBeautyEffect.so|cd80f5049b2f668379f1d3ecbf6e6206de20a46d
+product/lib64/libSNPE.so|a90efc5216de3cc3f20fb70f3e1ee567729f02f0
+product/lib64/libSuperSensorCPU_v05052021.so|22378fd888fc13dac8f46a250f101dbcdb6d44bc
+product/lib64/libSuperSensorProcessorCWrapper_v2.so|7e66994ee9b8c7d637afb58e0e341e5c94cf23a2
+product/lib64/libSuperSensorProcessor_v05052021.so|2c9204b230bddd089070e5b9238c85b9fe6d94f8
+product/lib64/libSuperSensor_v05052021.so|dfbfc247087c8f9dfc86401918c8026b06eaf4a5
 product/lib64/libarcsoft_dualcam_refocus.so|4e8778a48d5d9bb33ef85063ee4b9dbedfb858e2
 product/lib64/libarcsoft_frc.so|dab92e6bd066b44bb557f24c9cb2c587df2aab46
 product/lib64/libarcsoft_hdr_detection.so|b9c9d06189c7394c1a1780e7b434a58993035b49
@@ -303,13 +310,12 @@ product/lib64/libarcsoft_scbokeh_Generic.so|5f51996cb89299b9c222bc211a514db3b1d3
 product/lib64/libas-super-slow-motion.so|a323551fbfce86d4951e964a2e94f289c0190d79
 product/lib64/libbarhopper_v3.so|156387210e424f30d2642edeff2a549d77808abd
 product/lib64/libbg-postproc-jni.so|8c9d3dc74ef641c5456640451c70cfb6507f56f2
-product/lib64/libcamerax_extension_jni.so|58f91e63adf1a7642b9f2c5fc5be915a6896c111
-product/lib64/libc++_shared.so|dbbd9e4d06e2566c31bdc744dd7391536a780cc6
 product/lib64/libc++.so|e8707820517ab7713b8ca6ac4462361e00629c26
+product/lib64/libc++_shared.so|dbbd9e4d06e2566c31bdc744dd7391536a780cc6
+product/lib64/libcamerax_extension_jni.so|58f91e63adf1a7642b9f2c5fc5be915a6896c111
 product/lib64/libdoc-util.so|4a81cced80dcce4869446f9970509ded771ca89b
 product/lib64/libdynamic_depth.so|515f03132a086f15c565dd89b192ede5eeca7e29
 product/lib64/libfn-beauty-vfb-legacy-base.so|f0a72449ee71ed63aecbd5783576c2f3ad5fa5cb
-product/lib64/libFNVfbEngineHAL_legacy.so|228508501f39e855c89df1463f4a44e2cb085540
 product/lib64/libfoundation.so|fedb660a03cff0cd51a11be5472c550ad8f0482a
 product/lib64/libgg-dynamic_depth.so|5019a87cd8795e5d5a498971cfa5cbcaa3b0fb1e
 product/lib64/libgg-tensorflow-lite.so|339239bd3e9efbfa6379f07f0d2d7496b10a3d74
@@ -323,22 +329,16 @@ product/lib64/libmcf-stand-alone-sm.so|dd8c3309f8835b20086c3f888a90031c7869fb77
 product/lib64/libmeishe-nv-effects-thumbnails.so|a98f88462d5e129c19d3007c73151cdf98f83cfa
 product/lib64/libmmcamera_faceproc2.so|1c732d58bf24c939f568cda340318e5b873dce3b
 product/lib64/libmorpho_cinema_graph.so|c689a3734f6963b6ad4be3a9ddfae00c1c82acb0
-product/lib64/libmorpho_panorama_gp3_core.so|af05f89eb7d96b5980337361b4cd082eeb52d400
 product/lib64/libmorpho_panorama_gp3.so|239287acb6bbb790b793538030d219742a1ff5d0
+product/lib64/libmorpho_panorama_gp3_core.so|af05f89eb7d96b5980337361b4cd082eeb52d400
 product/lib64/libmorpho_sensor_fusion.so|bbbdfc2b980c3c5810a7d26f14c735c1b64a2af9
 product/lib64/libmot-cinemagraph-engine.so|436fec2e80ab8775e6337c42ddf0a4961dcde600
 product/lib64/libmot-util.so|db7ea99db0b906e6ef0ced21d10e5530b3bd106b
 product/lib64/libmpbase.so|07021c39abbc5c8538f6df1876a3eb3015ff9c2a
-product/lib64/libNvBeautyEffect.so|cd80f5049b2f668379f1d3ecbf6e6206de20a46d
 product/lib64/libqc-snpe.so|d56cb26ade27bbd4f3ce3d193982fa33523394cb
 product/lib64/libsmart_ppt.so|1ba24a17a049e175e5509a9ea1cba38940159efc
-product/lib64/libSNPE.so|a90efc5216de3cc3f20fb70f3e1ee567729f02f0
-product/lib64/libSuperSensorCPU_v05052021.so|22378fd888fc13dac8f46a250f101dbcdb6d44bc
-product/lib64/libSuperSensorProcessorCWrapper_v2.so|7e66994ee9b8c7d637afb58e0e341e5c94cf23a2
-product/lib64/libSuperSensorProcessor_v05052021.so|2c9204b230bddd089070e5b9238c85b9fe6d94f8
-product/lib64/libSuperSensor_v05052021.so|dfbfc247087c8f9dfc86401918c8026b06eaf4a5
-product/lib64/libtensorflowlite_gpu_delegate.so|821bcbece27d47c49daac00a65fdf48213befad1
 product/lib64/libtensorflowlite.so|17f94dc427220788db8f10d658d3a330488ac7d6
+product/lib64/libtensorflowlite_gpu_delegate.so|821bcbece27d47c49daac00a65fdf48213befad1
 
 # MotCamera4 - Permissions
 product/etc/permissions/com.motorola.camera3.content.ai.xml
