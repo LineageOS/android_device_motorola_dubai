@@ -289,7 +289,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 # MotCamera4
 product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED
 product/etc/init/init.motcamera3.lens.rc
-product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Aperture|9e15a32684556d452e30c73e25be5917352ae3a7
+product/priv-app/MotCamera4/MotCamera4.apk|9e15a32684556d452e30c73e25be5917352ae3a7
 
 # MotCamera4 - Libs
 product/lib64/libAncHumanSegFigureFusion-jni.so|29b3f53abf695f59093fa789cffaf79771b49568
