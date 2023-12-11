@@ -33,6 +33,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_dubai.xml
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=dubai
 TARGET_KERNEL_CONFIG += vendor/lineage_dubai.config
+BOARD_BOOTCONFIG += androidboot.selinux=permissive
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
