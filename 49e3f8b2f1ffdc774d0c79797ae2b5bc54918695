@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f0eab091_6041a07a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2023-12-13T15:17:08Z",
+      "side": 1,
+      "message": "Thanks Bruno for the review! I fixed the two issues",
+      "revId": "49e3f8b2f1ffdc774d0c79797ae2b5bc54918695",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
