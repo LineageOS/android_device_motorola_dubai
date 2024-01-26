@@ -1,4 +1,4 @@
-# All firmware images below are extracted from devon_g T2SN33.73-22-3
+# All firmware images below are extracted from the release mentioned in proprietary-files.txt
 
 abl.elf:abl.img;AB
 aop.mbn:aop.img;AB
