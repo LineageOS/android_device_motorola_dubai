@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74f24bab_cbb6d4e3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2024-01-27T04:01:02Z",
+      "side": 1,
+      "message": "turns out the sparse images on device firmware was preventing dubai from booting",
+      "revId": "9f50c233a76748f6219988df45c6b2310182b3d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
