@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd1759c7_ab709a3c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2024-03-07T03:12:38Z",
+      "side": 1,
+      "message": "got confirmation from two users who said current official LOS builds moto camera didn\u0027t work but a test build with this it does work",
+      "revId": "ee1e29f6b947117e4c43ab9d87d6d188e1f245cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
