@@ -24,6 +24,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=dubai_g \
-    PRIVATE_BUILD_DESC="motorola/dubai_g/dubai:13/T1RDS33.116-33-15-1/06f6d-c0e7b:user/release-keys"
+    PRIVATE_BUILD_DESC="dubai_g-user 13 T1RDS33.116-33-15-1 06f6d-c0e7b release-keys"
 
-BUILD_FINGERPRINT := dubai_g-user 13 T1RDS33.116-33-15-1 06f6d-c0e7b release-keys
+BUILD_FINGERPRINT := motorola/dubai_g/dubai:13/T1RDS33.116-33-15-1/06f6d-c0e7b:user/release-keys
