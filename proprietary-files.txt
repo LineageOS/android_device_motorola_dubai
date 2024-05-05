@@ -286,36 +286,66 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# MotCamera4 - from eqs - motorola/eqs_g/msi:12/S3SQ32.16-16-22/395c0-8c64a:user/release-keys
-product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED|9e299196c174b4034a2512da2be5da541405407c
-product/etc/permissions/com.motorola.camera3.xml|0d383cbc8f265d80e4f08c9bb9ecefe321a29a7d
-product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml|7df06ec01397dfba8860c84f71805b0895d14087
-product/etc/permissions/privapp-permissions-com.motorola.camera3.xml|b759bdaf7baca0dcc8ee5e1d1faf51c78d43c4a1
-product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml|d99de1fb201aa63d9d543a41104013989fc84dc9
-product/priv-app/MotCamera4/MotCamera4.apk;PRESIGNED|b4d82ced569b01af592da7d44a659e53fe3f4d20
-system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED|39932462697588f579439fade91c89909e0c7b63
-system/etc/permissions/com.motorola.motosignature.xml|657458b1f279e2158db87925dcd518d48f9afcf7
-system/etc/permissions/moto-core_services.xml|df6f254caec439a38a71abb0c8ae50e11e8185ea
-system/etc/permissions/moto-settings.xml|b6b1f14810bc3916a64677d1b19d4fefc20a51fe
-system/framework/com.motorola.motosignature.jar|41c005f3da5eae8dae42af36c82747b89c27225b
-system/framework/moto-core_services.jar|d7a4e78d8f93f3ce2f6164b60ec639553c3e8e09
-system/framework/moto-settings.jar|377dab9fc73ff5cc22f39bedce025432e700b31a
-system_ext/bin/motsettings|629acaf083fb5fb9ea171c8e87115918043cae90
-system_ext/framework/com.motorola.androidx.camera.extensions.jar|f48ae30d4524a30766bfa61703582613a3ef1a5d
-system_ext/etc/public.libraries-motocamera.txt|29ff03d20e668b106bdaafd77bff9902eb210c39
-system_ext/lib/libmcf_native_window_helper.motocamera.so|e6cf1cc996e0a0afc15ec3b71d2999d1be850805
-system_ext/lib64/libmcf_native_window_helper.motocamera.so|c2c4fa5b6a9e700525b2b1d1d3e5de7822542f3d
-system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk|2b8f6da5c99f999ca4de494fff78bf569a7589be
+# MotCamera4 - from dubai - dubai_g-user 13 T1RDS33.116-33-15-1 06f6d-c0e7b release-keys - RETAIL variant
+product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED|44b210e8a14092edf50396182eb37818c24a10e4
+product/etc/init/init.motcamera3.lens.rc|293260214b3b60496fb61709276295f17036f506
+product/priv-app/MotCamera4/MotCamera4.apk|2584e7f05737f215fd597c081c3cc300ef293de1
+product/lib64/libAncHumanSegFigureFusion-jni.so|29b3f53abf695f59093fa789cffaf79771b49568
+product/lib64/libFNVfbEngineHAL_legacy.so|228508501f39e855c89df1463f4a44e2cb085540
+product/lib64/libNvBeautyEffect.so|cd80f5049b2f668379f1d3ecbf6e6206de20a46d
+product/lib64/libSNPE.so|a90efc5216de3cc3f20fb70f3e1ee567729f02f0
+product/lib64/libSuperSensorCPU_v05052021.so|22378fd888fc13dac8f46a250f101dbcdb6d44bc
+product/lib64/libSuperSensorProcessorCWrapper_v2.so|7e66994ee9b8c7d637afb58e0e341e5c94cf23a2
+product/lib64/libSuperSensorProcessor_v05052021.so|2c9204b230bddd089070e5b9238c85b9fe6d94f8
+product/lib64/libSuperSensor_v05052021.so|dfbfc247087c8f9dfc86401918c8026b06eaf4a5
+product/lib64/libarcsoft_dualcam_refocus.so|4e8778a48d5d9bb33ef85063ee4b9dbedfb858e2
+product/lib64/libarcsoft_frc.so|dab92e6bd066b44bb557f24c9cb2c587df2aab46
+product/lib64/libarcsoft_hdr_detection.so|b9c9d06189c7394c1a1780e7b434a58993035b49
+product/lib64/libarcsoft_hdr_scbokeh_image.so|2c2d9e9c173ed5516a7e425e6b1b1ee0b9f1d1a8
+product/lib64/libarcsoft_high_dynamic_range.so|5b377a50612bafb30af4cb271327053abfe88a32
+product/lib64/libarcsoft_multiframe_bokeh_image.so|a2ac6da70a9bc9d42ac5287127bb8faa7951a05c
+product/lib64/libarcsoft_scbokeh_Generic.so|5f51996cb89299b9c222bc211a514db3b1d398b8
+product/lib64/libas-super-slow-motion.so|a323551fbfce86d4951e964a2e94f289c0190d79
+product/lib64/libbarhopper_v3.so|156387210e424f30d2642edeff2a549d77808abd
+product/lib64/libbg-postproc-jni.so|8c9d3dc74ef641c5456640451c70cfb6507f56f2
+product/lib64/libc++.so|e8707820517ab7713b8ca6ac4462361e00629c26
+product/lib64/libc++_shared.so|dbbd9e4d06e2566c31bdc744dd7391536a780cc6
+product/lib64/libcamerax_extension_jni.so|58f91e63adf1a7642b9f2c5fc5be915a6896c111
+product/lib64/libdoc-util.so|4a81cced80dcce4869446f9970509ded771ca89b
+product/lib64/libdynamic_depth.so|515f03132a086f15c565dd89b192ede5eeca7e29
+product/lib64/libfn-beauty-vfb-legacy-base.so|f0a72449ee71ed63aecbd5783576c2f3ad5fa5cb
+product/lib64/libfoundation.so|fedb660a03cff0cd51a11be5472c550ad8f0482a
+product/lib64/libgg-dynamic_depth.so|5019a87cd8795e5d5a498971cfa5cbcaa3b0fb1e
+product/lib64/libgg-tensorflow-lite.so|339239bd3e9efbfa6379f07f0d2d7496b10a3d74
+product/lib64/libgif.so|310d708f0c9b60c065514c1e3f1534c8ba347c7d
+product/lib64/libjpeg.so|a51f6dde2a6d7eb11378a2575a5e6bf625a15bbb
+product/lib64/liblenovo_panorama.so|13c8b6cc2366eea46c5fcb7eb3665a5ba5d38ed4
+product/lib64/libmcf-base.so|879813b31805da7ea3f8cf6409b142a7b13cf66b
+product/lib64/libmcf-jni.so|f65dd95befd29203caf6ad219c9cf580e15a05d0
+product/lib64/libmcf-qc-fd-offline_local.so|99d2dbab152e22d6ae3d552cee3a172fc886ba24
+product/lib64/libmcf-stand-alone-sm.so|dd8c3309f8835b20086c3f888a90031c7869fb77
+product/lib64/libmeishe-nv-effects-thumbnails.so|a98f88462d5e129c19d3007c73151cdf98f83cfa
+product/lib64/libmmcamera_faceproc2.so|1c732d58bf24c939f568cda340318e5b873dce3b
+product/lib64/libmorpho_cinema_graph.so|c689a3734f6963b6ad4be3a9ddfae00c1c82acb0
+product/lib64/libmorpho_panorama_gp3.so|239287acb6bbb790b793538030d219742a1ff5d0
+product/lib64/libmorpho_panorama_gp3_core.so|af05f89eb7d96b5980337361b4cd082eeb52d400
+product/lib64/libmorpho_sensor_fusion.so|bbbdfc2b980c3c5810a7d26f14c735c1b64a2af9
+product/lib64/libmot-cinemagraph-engine.so|436fec2e80ab8775e6337c42ddf0a4961dcde600
+product/lib64/libmot-util.so|db7ea99db0b906e6ef0ced21d10e5530b3bd106b
+product/lib64/libmpbase.so|07021c39abbc5c8538f6df1876a3eb3015ff9c2a
+product/lib64/libqc-snpe.so|d56cb26ade27bbd4f3ce3d193982fa33523394cb
+product/lib64/libsmart_ppt.so|1ba24a17a049e175e5509a9ea1cba38940159efc
+product/lib64/libtensorflowlite.so|17f94dc427220788db8f10d658d3a330488ac7d6
+product/lib64/libtensorflowlite_gpu_delegate.so|821bcbece27d47c49daac00a65fdf48213befad1
 
-# Moto Permissions - from eqs - motorola/eqs_g/msi:12/S3SQ32.16-16-22/395c0-8c64a:user/release-keys
-product/etc/permissions/com.motorola.camera3.xml|0d383cbc8f265d80e4f08c9bb9ecefe321a29a7d
-product/etc/permissions/com.motorola.camera3.content.ai.xml|261f857c62c97286f492b3f5c69ff11226a06af0
-product/etc/permissions/com.motorola.camera3.eqs.xml|74ad06f36667fb98558572606afc3a993fd444a9
-product/etc/permissions/com.motorola.camera3.lens.xml|7dfafac8d89447a1e0bc93fd5cea5ca6e5c20bee
-product/etc/permissions/com.motorola.moto-uirefresh.xml|a5c91ea6d99ad0d14e6e13000516c89098621837
-product/etc/permissions/com.motorola.motodisplay.xml|8d2c13a91e2f89f61a82ec2dcfc1958b618a42a5
-product/etc/permissions/privapp-permissions-com.motorola.motodisplay.xml|54a9493312161097ee7b424e0e5ebb0c20fd595e
-system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml|91397cef8b878b6903daf2f2d533d74565012f94
+# MotCamera4 - Permissions
+product/etc/permissions/com.motorola.camera3.content.ai.xml
+product/etc/permissions/com.motorola.camera3.dubai.xml
+product/etc/permissions/com.motorola.camera3.lens.xml
+product/etc/permissions/com.motorola.camera3.xml
+product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml
+product/etc/permissions/privapp-permissions-com.motorola.camera3.xml
+product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml
 
 # NFC
 vendor/bin/STFlashTool
