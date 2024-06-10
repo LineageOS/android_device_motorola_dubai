@@ -289,7 +289,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 # MotCamera4 - from dubai - dubai_g-user 13 T1RDS33.116-33-15-1 06f6d-c0e7b release-keys - RETAIL variant
 product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED|44b210e8a14092edf50396182eb37818c24a10e4
 product/etc/init/init.motcamera3.lens.rc|293260214b3b60496fb61709276295f17036f506
-product/priv-app/MotCamera4/MotCamera4.apk|2584e7f05737f215fd597c081c3cc300ef293de1
+product/priv-app/MotCamera4/MotCamera4.apk|8f945fa4439d7166536e7e2a8acff563d1aee334
 product/lib64/libAncHumanSegFigureFusion-jni.so|29b3f53abf695f59093fa789cffaf79771b49568
 product/lib64/libFNVfbEngineHAL_legacy.so|228508501f39e855c89df1463f4a44e2cb085540
 product/lib64/libNvBeautyEffect.so|cd80f5049b2f668379f1d3ecbf6e6206de20a46d
