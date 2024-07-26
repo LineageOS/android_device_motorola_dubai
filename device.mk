@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.dubai
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    sys.fflag.override.settings_biometrics2_enrollment=true \
+    sys.fflag.override.settings_biometrics2_fingerprint=true
+
 # Init
 $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
