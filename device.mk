@@ -28,7 +28,6 @@ PRODUCT_PACKAGES += \
     FrameworksResDubai \
     LineageSystemUIDubai \
     SettingsResDubai \
-    SettingsProviderResDubai \
     SystemUIResDubai \
     WifiResDubai
 
