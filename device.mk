@@ -59,6 +59,7 @@ PRODUCT_PACKAGES += \
     libgui_shim_vendor
 
 # Fingerprint
+TARGET_HAS_UDFPS := true
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.dubai
 
