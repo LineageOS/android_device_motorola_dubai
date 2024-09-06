@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022-2023 The LineageOS Project
+# Copyright (C) 2022-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -24,6 +24,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=dubai_g \
-    PRIVATE_BUILD_DESC="dubai_g-user 13 T1RDS33.116-33-15-8 5a543-33cdf1 release-keys"
+    PRIVATE_BUILD_DESC="dubai_g-user 14 U1RD34.80-40 f0ea3-81bef release-keys"
 
-BUILD_FINGERPRINT := motorola/dubai_g/dubai:13/T1RDS33.116-33-15-8/5a543-33cdf1:user/release-keys
+BUILD_FINGERPRINT := motorola/dubai_g/dubai:14/U1RD34.80-40/f0ea3-81bef:user/release-keys
