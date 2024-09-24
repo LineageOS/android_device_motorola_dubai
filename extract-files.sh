@@ -6,8 +6,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Load extract_utils and do some sanity checks
+MY_DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
+
 function blob_fixup() {
     case "${1}" in
+        product/priv-app/MotCamera4/MotCamera4.apk)
+            apktool_patch "${2}" "$MY_DIR/MotCamera4-patches"
+            ;;
         vendor/lib/libmot_chi_desktop_helper.so | vendor/lib64/libmot_chi_desktop_helper.so)
             [ "$2" = "" ] && return 0
             grep -q "libgui_shim_vendor.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim_vendor.so" "${2}"
