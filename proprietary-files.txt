@@ -289,7 +289,6 @@ product/etc/permissions/com.motorola.camera3.xml
 product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml
 product/etc/permissions/privapp-permissions-com.motorola.camera3.xml
 product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml
-product/priv-app/MotCamera4/MotCamera4.apk
 system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
 system/etc/permissions/com.motorola.motosignature.xml
 system/etc/permissions/moto-core_services.xml
@@ -299,6 +298,9 @@ system/framework/moto-core_services.jar
 system/framework/moto-settings.jar
 system_ext/bin/motsettings
 system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk
+
+# Motcamera4 - patched from source (Disable HDR video recording)
+product/priv-app/MotCamera4/MotCamera4.apk|04d8f5b2f86b5dd0d2fb48024ee8ac9b5c88d06a
 
 # Moto Permissions
 product/etc/permissions/com.motorola.camera3.content.ai.xml:vendor/etc/permissions/com.motorola.camera3.content.ai.xml
