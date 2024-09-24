@@ -482,15 +482,3 @@ vendor/firmware/tianma_goodix_test_limits_255.csv
 vendor/firmware/aw8622x_haptic.bin
 vendor/firmware/aw8622x_osc_rtp_12K_10s.bin
 vendor/firmware/aw8622x_rtp.bin
-
-# WPSS firmware - from S1RDS32.55-106-3
-vendor/firmware/wpss.b00|9214ea9be39a858849f2f854a13499d68208a659
-vendor/firmware/wpss.b01|e15f757c7a97f62a4d529e50769b75de7016588c
-vendor/firmware/wpss.b02|ae11da8b635ded3ed976b7d32b5e088b86a3aeaa
-vendor/firmware/wpss.b03|0590fe4f97d77dd110a8474f1219e40e9a26d6c2
-vendor/firmware/wpss.b04|a80736069f2e1a077c31ddedc04204479cf1650e
-vendor/firmware/wpss.b05|e6492d98c65316c43bd20b2e79a69de28a15c00d
-vendor/firmware/wpss.b06|3337d698242ca04332a65023b915b076f3ef6dfb
-vendor/firmware/wpss.b07|0a8b713c17d486485c3b35eea4eed471e5330004
-vendor/firmware/wpss.mdt|50925b033c00324162fd708e9cda99c75d42efec
-vendor/firmware/wpss.qdb|0684693df38ddc4647c62c386e4683c6a7aa9696
