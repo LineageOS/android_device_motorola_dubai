@@ -4,8 +4,5 @@ bluetooth.device.default_name=motorola edge 30
 # Camera
 persist.vendor.camera.physical.num=4
 
-# Motorola
-ro.mot.build.customerid=global
-
 # NFC
 ro.vendor.hw.nfc=st
