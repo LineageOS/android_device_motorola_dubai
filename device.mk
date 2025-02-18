@@ -70,7 +70,7 @@ $(call soong_config_set,livedisplay_sysfs,enable_af,true)
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.st \
+    android.hardware.nfc-service.st \
     com.android.nfc_extras \
     Tag
 
