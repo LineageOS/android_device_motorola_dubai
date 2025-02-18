@@ -1,2 +1,5 @@
 # Camera
 persist.vendor.camera.physical.num=4
+
+# NFC
+persist.vendor.nfc.st.multisim_fw_config=true
