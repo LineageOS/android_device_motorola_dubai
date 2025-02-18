@@ -1,2 +1,5 @@
 # Display
 sys.brightness.disable_gamma_conversion=true
+
+# NFC
+persist.nfc_cfg.config_file_name=libnfc-nci-st.conf
