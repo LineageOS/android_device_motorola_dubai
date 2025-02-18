@@ -308,9 +308,6 @@ product/etc/permissions/com.motorola.camera3.lens.xml:vendor/etc/permissions/com
 product/etc/permissions/com.motorola.camera3.xml:vendor/etc/permissions/com.motorola.camera3.xml
 product/etc/permissions/com.motorola.moto-uirefresh.xml
 
-# NFC
-vendor/bin/STFlashTool
-
 # NFC - configs
 vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-nci-st.conf
