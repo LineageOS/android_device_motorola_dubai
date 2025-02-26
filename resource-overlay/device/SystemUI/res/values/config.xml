@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2022-2024 The LineageOS Project
+     SPDX-FileCopyrightText: 2022-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
+<resources>
     <!-- A path similar to frameworks/base/core/res/res/values/config.xml
-      config_mainBuiltInDisplayCutout that describes a path larger than the exact path of a display
-      cutout. If present as well as config_enableDisplayCutoutProtection is set to true, then
-      SystemUI will draw this "protection path" instead of the display cutout path that is normally
-      used for anti-aliasing.
+      config_mainBuiltInDisplayCutout that describes a path larger than the exact path of a outer
+      display cutout. If present as well as config_enableDisplayCutoutProtection is set to true,
+      then SystemUI will draw this "protection path" instead of the display cutout path that is
+      normally used for anti-aliasing.
 
       This path will only be drawn when the front-facing camera turns on, otherwise the main
       DisplayCutout path will be rendered
        -->
-    <string translatable="false" name="config_frontBuiltInDisplayCutoutProtection">
+    <string name="config_frontBuiltInDisplayCutoutProtection" translatable="false">
         M 498.5,65
         a 41.5,41.5 0 1 0 83,0
         a 41.5,41.5 0 1 0 -83,0
         Z
     </string>
 
-    <!--  ID for the camera that needs extra protection -->
-    <string translatable="false" name="config_protectedCameraId">1</string>
+    <!-- ID for the camera of outer display that needs extra protection -->
+    <string name="config_protectedCameraId" translatable="false">1</string>
 
     <!--  Flag to turn on the rendering of the above path or not  -->
     <bool name="config_enableDisplayCutoutProtection">true</bool>
-
-    <!-- Microns/ums (1000 um = 1mm) per pixel for the given device. If unspecified, UI that
-         relies on this value will not be sized correctly. -->
-    <item name="pixel_pitch" format="float" type="dimen">48.3</item>
-
 </resources>
