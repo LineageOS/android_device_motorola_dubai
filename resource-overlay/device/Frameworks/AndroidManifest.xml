@@ -5,5 +5,9 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="android.overlay.dubai">
-    <overlay android:targetPackage="android" android:isStatic="true" android:priority="600"/>
+
+    <overlay
+        android:isStatic="true"
+        android:priority="600"
+        android:targetPackage="android" />
 </manifest>
