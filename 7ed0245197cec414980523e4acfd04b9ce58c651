@@ -16,6 +16,23 @@
       "message": "spacing?",
       "revId": "7ed0245197cec414980523e4acfd04b9ce58c651",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2e013a78_44e1c591",
+        "filename": "resource-overlay/device/Frameworks/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-02-28T05:04:02Z",
+      "side": 1,
+      "message": "applied to wrong line, meant this one",
+      "revId": "7ed0245197cec414980523e4acfd04b9ce58c651",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
