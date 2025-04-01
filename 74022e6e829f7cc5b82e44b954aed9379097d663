@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "18a1081a_983ad5b9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2025-04-01T05:07:02Z",
+      "side": 1,
+      "message": "If we are going to debrand, shouldn\u0027t we do this too so that there\u0027s even less diffs since we are namespace protected?\n\nWe already do stuff like \"FrameworksResCommon_Sys\"",
+      "revId": "74022e6e829f7cc5b82e44b954aed9379097d663",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
