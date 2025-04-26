@@ -23,6 +23,6 @@ PRODUCT_MODEL := motorola edge 30
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="dubai_g-user 14 U1RDS34.80-40-5-3 b1f71-ff67e release-keys" \
-    BuildFingerprint=motorola/dubai_g/dubai:14/U1RDS34.80-40-5-3/b1f71-ff67e:user/release-keys \
+    BuildDesc="dubai_g-user 14 U1RDS34.80-40-5-4 94692f-00ef9 release-keys" \
+    BuildFingerprint=motorola/dubai_g/dubai:14/U1RDS34.80-40-5-4/94692f-00ef9:user/release-keys \
     DeviceProduct=dubai_g
