@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd9612ee_42d8f9a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2025-05-05T01:19:15Z",
+      "side": 1,
+      "message": "In the future please consult me before merging like this. Dubai has brightness conversions in the kernel and this super broke brightness on Dubai\n\nI\u0027ll revert the kernel stuff and get the official 20250502 build pulled",
+      "revId": "3346728165722771ad30c6b92f0a4b4856861345",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
