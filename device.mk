@@ -65,6 +65,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/goodix_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix_ts.kl
 
+# LiveDisplay
+$(call soong_config_set,livedisplay_motorola,enable_af,true)
+$(call soong_config_set,livedisplay_motorola,enable_se,true)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.st \
