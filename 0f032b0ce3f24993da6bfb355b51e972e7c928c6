@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb72887c_311052fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2025-09-20T14:38:33Z",
+      "side": 1,
+      "message": "This works on dubai, but it needs to be merged at the same time as other sm7325-common devices as we will drop support for NFC HIDL altogether",
+      "revId": "0f032b0ce3f24993da6bfb355b51e972e7c928c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
