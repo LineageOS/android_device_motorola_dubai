@@ -16,6 +16,23 @@
       "message": "This works on dubai, but it needs to be merged at the same time as other sm7325-common devices as we will drop support for NFC HIDL altogether",
       "revId": "0f032b0ce3f24993da6bfb355b51e972e7c928c6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf1edd34_a2bf7909",
+        "filename": "extract-files.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-09-24T04:09:22Z",
+      "side": 1,
+      "message": "```suggestion\n    \u0027vendor/lib64/sensors.moto.so\u0027: blob_fixup()\n```",
+      "revId": "0f032b0ce3f24993da6bfb355b51e972e7c928c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
