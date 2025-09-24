@@ -33,6 +33,24 @@
       "message": "```suggestion\n    \u0027vendor/lib64/sensors.moto.so\u0027: blob_fixup()\n```",
       "revId": "0f032b0ce3f24993da6bfb355b51e972e7c928c6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7959d25f_6d900582",
+        "filename": "extract-files.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-09-24T04:29:34Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "bf1edd34_a2bf7909",
+      "revId": "0f032b0ce3f24993da6bfb355b51e972e7c928c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
