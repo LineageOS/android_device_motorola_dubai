@@ -227,6 +227,9 @@
         <!-- Bluetooth Audio HAL -->
         <xi:include href="bluetooth_audio_policy_configuration.xml"/>
 
+        <!-- Bluetooth Audio HAL for hearing aid -->
+        <xi:include href="bluetooth_hearing_aid_audio_policy_configuration.xml"/>
+
     </modules>
     <!-- End of Modules section -->
 
