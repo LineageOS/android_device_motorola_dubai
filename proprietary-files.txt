@@ -301,7 +301,7 @@ system_ext/bin/motsettings
 system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk
 
 # MotCamera4 - from dubai - 14 U1RDS34.80-40-5-6 ba4fd-68ef4
-product/priv-app/MotCamera4/MotCamera4.apk|256e05ad00ce062c9a01ad47ae588e5558e001ab
+product/priv-app/MotCamera4/MotCamera4.apk|ec92f77ad9f8fb77bf3e50924b24bd78a31712be
 
 # Moto Permissions
 product/etc/permissions/com.motorola.camera3.content.ai.xml:vendor/etc/permissions/com.motorola.camera3.content.ai.xml
