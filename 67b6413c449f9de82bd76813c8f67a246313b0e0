@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2ae6ed2_325ff755",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2026-01-04T04:26:15Z",
+      "side": 1,
+      "message": "works on dubai, need dependency hardware/motorola commits merged first though",
+      "revId": "67b6413c449f9de82bd76813c8f67a246313b0e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
