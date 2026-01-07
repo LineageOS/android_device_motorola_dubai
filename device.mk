@@ -26,7 +26,6 @@ $(call inherit-product, device/motorola/sm7325-common/common.mk)
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResDevice \
-    LineageSystemUIDevice \
     SettingsResDevice \
     SystemUIResDevice \
     WifiResDevice
