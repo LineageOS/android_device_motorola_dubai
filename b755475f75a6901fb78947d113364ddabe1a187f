@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "746c312e_ed39bf27",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-02-15T00:46:38Z",
+      "side": 1,
+      "message": "This should be squashed into https://review.lineageos.org/c/LineageOS/android_device_motorola_dubai/+/474309/",
+      "revId": "b755475f75a6901fb78947d113364ddabe1a187f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
