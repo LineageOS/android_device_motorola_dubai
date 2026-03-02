@@ -16,6 +16,24 @@
       "message": "need more testing, HBM isn\u0027t triggering, maybe because dubai is GHBM and not LHBM",
       "revId": "b381a05fff059a724db0dde3d4dedca21e978518",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "696c1777_f282007d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-03-02T05:36:52Z",
+      "side": 1,
+      "message": "Maybe we should bring the polling thread over to a legacy udfps handler",
+      "parentUuid": "68fe21c3_a9947626",
+      "revId": "b381a05fff059a724db0dde3d4dedca21e978518",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
