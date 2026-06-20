@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "23bdda5e_02c19554",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-06-20T11:03:48Z",
+      "side": 1,
+      "message": "LineageOS/android_device_motorola_miami/fingerprint/BiometricsFingerprint.cpp\nLineageOS/android_device_motorola_sm8550-common/fingerprint/BiometricsFingerprint.cpp\nLineageOS/android_hardware_motorola change 474261: udfps: Switch to IOCTL for HBM",
+      "revId": "e70032b7e757834535adb1fe4f8530078428a5d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
