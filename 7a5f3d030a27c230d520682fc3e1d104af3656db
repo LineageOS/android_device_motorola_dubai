@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a09b23d4_4590fdb2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2026-06-20T03:34:21Z",
+      "side": 1,
+      "message": "tried, HBM triggers but it\u0027s only flashing and then turns off and fingerprint unlock fails",
+      "revId": "7a5f3d030a27c230d520682fc3e1d104af3656db",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
