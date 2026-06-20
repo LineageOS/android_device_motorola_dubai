@@ -36,6 +36,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets': blob_fixup()
+        .replace_needed('vendor.egistec.hardware.fingerprint@4.0.so', 'vendor.egistec.hardware.fingerprint.dubai@4.0.so'),
     ('vendor/lib/libmot_chi_desktop_helper.so', 'vendor/lib64/libmot_chi_desktop_helper.so'): blob_fixup()
         .add_needed('libgui_shim_vendor.so'),
     'vendor/lib64/sensors.moto.so': blob_fixup()
