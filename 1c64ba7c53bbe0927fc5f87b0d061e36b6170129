@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "061102a9_294c8ac9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2026-06-20T03:35:04Z",
+      "side": 1,
+      "message": "dubai doesn\u0027t seem to work with the source-built egistec fingerprint interface",
+      "revId": "1c64ba7c53bbe0927fc5f87b0d061e36b6170129",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
