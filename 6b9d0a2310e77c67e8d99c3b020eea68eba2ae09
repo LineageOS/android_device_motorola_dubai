@@ -16,6 +16,24 @@
       "message": "What\u0027s wrong with it?",
       "revId": "6b9d0a2310e77c67e8d99c3b020eea68eba2ae09",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "28528d44_50ba8316",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2026-06-21T17:38:04Z",
+      "side": 1,
+      "message": "So without libudfpshandler, dubai would trigger HBM,but it would turn off right away and fingerprint sensor wouldn\u0027t work\n\nDinesh fixed it with this commit\nhttps://review.lineageos.org/c/LineageOS/android_device_motorola_dubai/+/474310\n\nbut now, dubai has the screen off UDFPS doesn\u0027t work issue and needs the 200ms delay workaround... so maybe it\u0027s something in our HIDL that needs to be fixed?",
+      "parentUuid": "0b913002_7c1fcf72",
+      "revId": "6b9d0a2310e77c67e8d99c3b020eea68eba2ae09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
