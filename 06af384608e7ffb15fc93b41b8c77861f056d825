@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "237b7935_480fdf94",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2026-07-09T08:09:53Z",
+      "side": 1,
+      "message": "wip, mainly adds the lzo modules the rest is the same, just different structure. Removed duplicate entries and dropped same modules as previous commits and renamed the wlan kernel module too",
+      "revId": "06af384608e7ffb15fc93b41b8c77861f056d825",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
