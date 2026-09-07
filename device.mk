@@ -86,5 +86,10 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-dubai-game-perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-dubai.conf
 
+# VINTF
+ODM_MANIFEST_SKUS += n
+ODM_MANIFEST_N_FILES := \
+    device/motorola/sm7325-common/vintf/manifest_ss.xml
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/dubai/dubai-vendor.mk)
